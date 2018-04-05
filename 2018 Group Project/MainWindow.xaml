@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:_2018_Group_Project"
         mc:Ignorable="d"
         Title="MainWindow" Height="432" Width="819">
-    <Grid Background="#FFC3C3C3" Margin="0,0,-302,-83">
+    <Grid Margin="0,0,369,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\ianmi\Source\Repos\352-Semester-Group-Project2\2018 Group Project\Background Sample 1.png" Stretch="UniformToFill"/>
+        </Grid.Background>
         <TextBox x:Name="TextBox" HorizontalAlignment="Left" Height="382" Margin="444,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365"/>
         <ComboBox x:Name="Infantry" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91"  Height="22" Margin="10,4,0,0" >
             <Button Content="Legion Centurion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="249" Click="Button_Click_1" MouseDoubleClick="addLegionCenturion"/>
@@ -69,6 +72,7 @@
             <Button x:Name="LegionThunderhawkGunship" Content="Legion Thunderhawk Gunship" HorizontalAlignment="Left" VerticalAlignment="Top" Width="245" Click="LegionThunderhawkGunship_Click" MouseDoubleClick="addLegionThunderhawkGunship_Click"/>
             <Button x:Name="LegionMastodonHeavyAssaultTransport" Content="Legion Mastodon Heavy Assault Transport" HorizontalAlignment="Left" VerticalAlignment="Top" Width="245" Click="LegionMastodonHeavyAssaultTransport_Click" MouseDoubleClick="addLegionMastodonHeavyAssaultTransport_Click"/>
             <Button x:Name="SokarPatternStormbird" Content="Sokar Pattern Stormbird" HorizontalAlignment="Left" VerticalAlignment="Top" Width="245" Click="SokarPatternStormbird_Click" MouseDoubleClick="addSokarPatternStormbird_Click"/>
+            <Button x:Name="SicaranVenatorTankDestroyer" Content="Sicaran Venator Tank Destroyer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="245" Click="SicaranVenatorTankDestroyer_Click" MouseDoubleClick="addSicaranVenatorTankDestroyer_Click"/>
         </ComboBox>
         <ComboBox HorizontalAlignment="Left" Margin="231,4,0,0" VerticalAlignment="Top" Width="120">
             <Button x:Name="LegionDreadnoughtTalon" Content="Legion Dreadnought Talon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="256" Click="LegionDreadnoughtTalon_Click" MouseDoubleClick="addLegionDreadnoughtTalon_Click"/>
@@ -81,9 +85,11 @@
         </ComboBox>
         <TextBlock HorizontalAlignment="Left" Margin="115,10,0,0" TextWrapping="Wrap" Text="Vehicles" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="240,10,0,0" TextWrapping="Wrap" Text="Walkers" VerticalAlignment="Top"/>
-        <Button x:Name="makelist" Content="Create new list" HorizontalAlignment="Left" Margin="32,66,0,0" VerticalAlignment="Top" Width="91" MouseDoubleClick="makelist_Click"/>
-        <Button x:Name="printarmy" Content="Print army" HorizontalAlignment="Left" Margin="226,130,0,0" VerticalAlignment="Top" Width="75" Click="printarmy_Click"/>
-        <Button x:Name="SicaranVenatorTankDestroyer" Content="Sicaran Venator Tank Destroyer" HorizontalAlignment="Left" Margin="140,66,0,0" VerticalAlignment="Top" Width="211" Click="SicaranVenatorTankDestroyer_Click" MouseDoubleClick="addSicaranVenatorTankDestroyer_Click"/>
+        <Button x:Name="makelist" Content="Create new list" HorizontalAlignment="Left" Margin="341,346,0,0" VerticalAlignment="Top" Width="91" MouseDoubleClick="makelist_Click"/>
+        <Button x:Name="printarmy" Content="Print army" HorizontalAlignment="Left" Margin="357,371,0,0" VerticalAlignment="Top" Width="75" Click="printarmy_Click"/>
+        <Label x:Name="Program_Name" Content="Warhammer 40k: Armies in the Age of Darkness Army Builder v1.0" HorizontalAlignment="Left" Margin="9,300,-14,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFB60000" Width="447" FontFamily="Times New Roman" FontSize="14"/>
+        <Label x:Name="Author_Label" Content="Created By: Ian Nevills, James Laubach, Nicholas Ried" HorizontalAlignment="Left" Margin="19,340,0,0" VerticalAlignment="Top" Background="#00000000" Foreground="#FF9E0000" FontFamily="Times New Roman"/>
+
 
     </Grid>
 </Window>
