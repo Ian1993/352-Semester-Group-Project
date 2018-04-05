@@ -32,6 +32,8 @@ namespace _2018_Group_Project
 
             //List<unit> temp = new List<unit>();
             UserList = new List<unit>();
+
+            UnitCount = 0;
         }
         public void addUnit(string UnitID, string unitName)
         {
@@ -49,7 +51,7 @@ namespace _2018_Group_Project
                 {
                     Console.WriteLine("SingleLine!");
 
-                    UserList.Add(new Infantry(unitName));
+                    UserList.Add(new Infantry(unitName, UnitCount));
 
                     //UserList.Insert(UnitCount, new Infantry());
                     UnitCount++;
@@ -67,7 +69,7 @@ namespace _2018_Group_Project
 
             else if (Chars[1] == '2')
             {
-                UserList.Add(new Vehicle(unitName));
+                UserList.Add(new Vehicle(unitName, UnitCount));
 
                 Console.WriteLine("Vehicle");
 
@@ -78,7 +80,7 @@ namespace _2018_Group_Project
 
             else if (Chars[1] == '3')
             {
-                UserList.Add(new Walker(unitName));
+                UserList.Add(new Walker(unitName, UnitCount));
 
                 Console.WriteLine("Walker");
 
@@ -142,7 +144,7 @@ namespace _2018_Group_Project
 
         //protected int unitID;
 
-        //protected int unitIndex;
+        protected int unitIndex;
 
         public unit()
         {
@@ -163,9 +165,11 @@ namespace _2018_Group_Project
 
     class Infantry : unit
     {
-        public Infantry(string unitName) : base()
+        public Infantry(string unitName, int index) : base()
         {
             name = unitName;
+
+            unitIndex = index;
         }
 
         public override void print()
@@ -174,18 +178,18 @@ namespace _2018_Group_Project
 
 
             //user.TextUpdate(name);
-            
-           foreach(Window window in Application.Current.Windows)
-           {
-                if(window.GetType() == typeof(MainWindow))
-                {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + "\n";
-                }
-           }
-           
-            
 
-            
+            foreach (Window window in Application.Current.Windows)
+            {
+                if (window.GetType() == typeof(MainWindow))
+                {
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + " " + unitIndex + "\n";
+                }
+            }
+
+
+
+
         }
 
         public override void ReadIn(string name, string statline, int unitID, int unitIndex)
@@ -197,9 +201,11 @@ namespace _2018_Group_Project
     class Vehicle : unit
     {
 
-        public Vehicle(string unitName) : base()
+        public Vehicle(string unitName, int index) : base()
         {
             name = unitName;
+
+            unitIndex = index;
         }
 
         public override void print()
@@ -208,7 +214,7 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + " " + unitIndex + "\n";
                 }
             }
         }
@@ -221,9 +227,11 @@ namespace _2018_Group_Project
 
     class Walker : unit
     {
-        public Walker(string unitName) : base()
+        public Walker(string unitName, int index) : base()
         {
             name = unitName;
+
+            unitIndex = index;
         }
 
         public override void print()
@@ -232,7 +240,7 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + " " + unitIndex + "\n";
                 }
             }
         }
