@@ -10,7 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\ianmi\Source\Repos\352-Semester-Group-Project2\2018 Group Project\Background Sample 1.png" Stretch="UniformToFill"/>
         </Grid.Background>
-        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Height="382" Margin="444,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365"/>
+        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Height="397" Margin="446,4,-367,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="363" FontWeight="Bold"/>
         <ComboBox x:Name="Infantry" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91"  Height="22" Margin="10,4,0,0" >
             <Button Content="Legion Centurion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="249" Click="Button_Click_1" MouseDoubleClick="addLegionCenturion"/>
             <Button Content="Legion Veteran Tactical Squad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="249" MouseDoubleClick="addLegionVeteranTacticalSquad" Click="Button_Click_3"/>
