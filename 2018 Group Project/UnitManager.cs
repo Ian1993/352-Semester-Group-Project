@@ -125,6 +125,11 @@ namespace _2018_Group_Project
             int x = Convert.ToInt32(listindex);
             UserList.RemoveAt(x);
             UnitCount--;
+
+            for( int y = 0; y < UnitCount; y++)
+            {
+                UserList[y].IndexUpdate(y);
+            }
         }
 
 
@@ -156,6 +161,8 @@ namespace _2018_Group_Project
         public abstract void print();
 
         public abstract void ReadIn(string name, string statline, int unitID, int unitIndex);
+
+        public abstract void IndexUpdate(int x);
 
 
 
@@ -196,6 +203,11 @@ namespace _2018_Group_Project
         {
 
         }
+
+        public override void IndexUpdate(int x)
+        {
+            unitIndex = x;
+        }
     }
 
     class Vehicle : unit
@@ -222,6 +234,11 @@ namespace _2018_Group_Project
         public override void ReadIn(string name, string statline, int unitID, int unitIndex)
         {
 
+        }
+
+        public override void IndexUpdate(int x)
+        {
+            unitIndex = x;
         }
     }
 
@@ -250,13 +267,18 @@ namespace _2018_Group_Project
 
         }
 
+        public override void IndexUpdate(int x)
+        {
+            unitIndex = x;
+        }
+
     }
-    /*
+    
     class dualLine : Infantry
     {
         Infantry Store;
-        /*
-        public dualLine(Infantry user, string unitName) 
+        
+        public dualLine(string unitName, int index, Infantry user) :base()
         {
             Store = user;
         }
@@ -273,5 +295,5 @@ namespace _2018_Group_Project
         }
         
     }
-    */
+    
 }

@@ -85,7 +85,7 @@
         </ComboBox>
         <TextBlock HorizontalAlignment="Left" Margin="115,10,0,0" TextWrapping="Wrap" Text="Vehicles" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="240,10,0,0" TextWrapping="Wrap" Text="Walkers" VerticalAlignment="Top"/>
-        <Button x:Name="makelist" Content="Create new list" HorizontalAlignment="Left" Margin="341,346,0,0" VerticalAlignment="Top" Width="91" MouseDoubleClick="makelist_Click"/>
+        <Button x:Name="FuturehomeofsaveList" Content="Save List" HorizontalAlignment="Left" Margin="341,346,0,0" VerticalAlignment="Top" Width="91" MouseDoubleClick="savelist_Click"/>
         <Button x:Name="printarmy" Content="Print army" HorizontalAlignment="Left" Margin="357,371,0,0" VerticalAlignment="Top" Width="75" Click="printarmy_Click"/>
         <Label x:Name="Program_Name" Content="Warhammer 40k: Armies in the Age of Darkness Army Builder v1.0" HorizontalAlignment="Left" Margin="9,300,-14,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFB60000" Width="447" FontFamily="Times New Roman" FontSize="14"/>
         <Label x:Name="Author_Label" Content="Created By: Ian Nevills, James Laubach, Nicholas Ried" HorizontalAlignment="Left" Margin="19,340,0,0" VerticalAlignment="Top" Background="#00000000" Foreground="#FF9E0000" FontFamily="Times New Roman"/>
@@ -94,6 +94,11 @@
         <Button Content="Remove Unit" HorizontalAlignment="Left" Margin="357,262,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_13"/>
         <TextBlock x:Name="Remove_Label" HorizontalAlignment="Left" Margin="302,241,0,0" TextWrapping="Wrap" Text="Enter a Unit Index" VerticalAlignment="Top" Foreground="#FFA00000" FontFamily="Times New Roman"/>
         <TextBlock x:Name="Instruction_Label" HorizontalAlignment="Left" Margin="11,31,0,0" TextWrapping="Wrap" Text="Single click to display unit information, double click to add to list" VerticalAlignment="Top" RenderTransformOrigin="-4.347,0.25" Foreground="#FFD40303" FontFamily="Times New Roman"/>
+        <TextBox x:Name="UnitDisplay" HorizontalAlignment="Left" Height="80" Margin="11,65,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <Button x:Name="_2500Picker" Content="2500" HorizontalAlignment="Left" Margin="11,172,0,0" VerticalAlignment="Top" Width="75" Click="_2500Picker_Click"/>
+        <Button x:Name="_1500Picker" Content="1500" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top" Width="75" Click="_1500Picker_Click"/>
+        <TextBox x:Name="PointBox" HorizontalAlignment="Left" Height="23" Margin="11,227,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="CustomPointConfirm" Content="Confirm" HorizontalAlignment="Left" Margin="91,228,0,0" VerticalAlignment="Top" Width="75" Click="CustomPointConfirm_Click"/>
 
 
     </Grid>
