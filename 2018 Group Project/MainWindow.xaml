@@ -8,9 +8,7 @@
 
         Title="MainWindow" Height="432" Width="819">
     <Grid Margin="0,0,365,0">
-        <Grid.Background>
-            <ImageBrush ImageSource="\2018 Group Project\Background Sample 1.png" Stretch="UniformToFill"/>
-        </Grid.Background>
+        
         <TextBox x:Name="TextBox" HorizontalAlignment="Left" Height="401" Margin="446,0,-365,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" FontWeight="Bold"/>
 
 
@@ -105,9 +103,6 @@
         <Button x:Name="_1500Picker" Content="1500" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top" Width="75" Click="_1500Picker_Click"/>
         <TextBox x:Name="PointBox" HorizontalAlignment="Left" Height="23" Margin="11,227,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="CustomPointConfirm" Content="Confirm" HorizontalAlignment="Left" Margin="91,228,0,0" VerticalAlignment="Top" Width="75" Click="CustomPointConfirm_Click"/>
-
-       
-        <TextBox x:Name="CurrentSelection" HorizontalAlignment="Left" Height="128" Margin="356,7,-363.2,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="451"/>
 
 
 

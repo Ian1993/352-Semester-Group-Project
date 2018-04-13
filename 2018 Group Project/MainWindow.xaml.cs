@@ -44,13 +44,13 @@ namespace _2018_Group_Project
 
         private void makelist_Click(object sender, RoutedEventArgs e)
         { newlist = new unitManager();
-           CurrentSelection.Text = "New list made";
+           UnitDisplay.Text = "New list made";
            TextBox.Text = "";
  
         }
         
         
-        private void Button_Click(object sender, RoutedEventArgs e) { CurrentSelection.Text = "Legion Praetor"; }
+        
 
         private void addLegionPraetor(object sender, RoutedEventArgs e)
         {
