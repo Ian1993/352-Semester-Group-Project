@@ -134,7 +134,7 @@ namespace _2018_Group_Project
         private void Button_Click_9(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Tactical Squad" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
         private void addLegionTacticalSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01134001";
+            string unitid = "01134002";
             string unitname = "Legion Tactical Squad";
             newlist.addUnit(unitid, unitname);
             //TextBox.Text = "classid:13 unitid:4001, 4002, 4101, 4102";

@@ -54,7 +54,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ConcreteUnitcreator.cs" />
     <Compile Include="FileManager.cs" />
     <Compile Include="UnitManager.cs" />
     <Page Include="MainWindow.xaml">

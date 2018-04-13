@@ -58,7 +58,7 @@ namespace _2018_Group_Project
                 }
                 else if (Chars[7] == '2')
                 {
-                    //UserList.Add(new dualLine(new dualLine( new Infantry(unitName))));
+                    UserList.Add(new dualLine( unitName, UnitCount, new Infantry(unitName, UnitCount)));
 
 
                     //UserList.Insert(UnitCount, new dualLine(new Infantry()));
@@ -150,6 +150,8 @@ namespace _2018_Group_Project
         //protected int unitID;
 
         protected int unitIndex;
+
+        protected Infantry Store;
 
         public unit()
         {
@@ -264,7 +266,7 @@ namespace _2018_Group_Project
 
         public override void ReadIn(string name, string statline, int unitID, int unitIndex)
         {
-
+            
         }
 
         public override void IndexUpdate(int x)
@@ -274,26 +276,44 @@ namespace _2018_Group_Project
 
     }
     
-    class dualLine : Infantry
+    class dualLine : unit
     {
-        Infantry Store;
+        
         
         public dualLine(string unitName, int index, Infantry user) :base()
         {
-            Store = user;
-        }
+            name = unitName;
 
-        public override void print()
-        {
-            Store.print();
-            Console.WriteLine("DualLineInfantry!");
+            unitIndex = index;
+
+            Store = user;
         }
 
         public override void ReadIn(string name, string statline, int unitID, int unitIndex)
         {
 
         }
-        
+
+        public override void IndexUpdate(int x)
+        {
+            
+        }
+
+        public override void print()
+        {
+            Store.print();
+
+            foreach (Window window in Application.Current.Windows)
+            {
+                if (window.GetType() == typeof(MainWindow))
+                {
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "\n";
+
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + " " + unitIndex + "\n";
+                }
+            }
+        }
+
     }
     
 }
