@@ -32,6 +32,8 @@ namespace _2018_Group_Project
 
             //List<unit> temp = new List<unit>();
             UserList = new List<unit>();
+
+            UnitCount = 0;
         }
         public void addUnit(string UnitID, string unitName)
         {
@@ -49,14 +51,14 @@ namespace _2018_Group_Project
                 {
                     Console.WriteLine("SingleLine!");
 
-                    UserList.Add(new Infantry(unitName));
+                    UserList.Add(new Infantry(unitName, UnitCount));
 
                     //UserList.Insert(UnitCount, new Infantry());
                     UnitCount++;
                 }
                 else if (Chars[7] == '2')
                 {
-                    //UserList.Add(new dualLine(new dualLine( new Infantry(unitName))));
+                    UserList.Add(new dualLine( unitName, UnitCount, new Infantry(unitName, UnitCount)));
 
 
                     //UserList.Insert(UnitCount, new dualLine(new Infantry()));
@@ -67,7 +69,7 @@ namespace _2018_Group_Project
 
             else if (Chars[1] == '2')
             {
-                UserList.Add(new Vehicle(unitName));
+                UserList.Add(new Vehicle(unitName, UnitCount));
 
                 Console.WriteLine("Vehicle");
 
@@ -78,7 +80,7 @@ namespace _2018_Group_Project
 
             else if (Chars[1] == '3')
             {
-                UserList.Add(new Walker(unitName));
+                UserList.Add(new Walker(unitName, UnitCount));
 
                 Console.WriteLine("Walker");
 
@@ -123,6 +125,11 @@ namespace _2018_Group_Project
             int x = Convert.ToInt32(listindex);
             UserList.RemoveAt(x);
             UnitCount--;
+
+            for( int y = 0; y < UnitCount; y++)
+            {
+                UserList[y].IndexUpdate(y);
+            }
         }
 
 
@@ -142,7 +149,9 @@ namespace _2018_Group_Project
 
         //protected int unitID;
 
-        //protected int unitIndex;
+        protected int unitIndex;
+
+        protected Infantry Store;
 
         public unit()
         {
@@ -155,6 +164,8 @@ namespace _2018_Group_Project
 
         public abstract void ReadIn(string name, string statline, int unitID, int unitIndex);
 
+        public abstract void IndexUpdate(int x);
+
 
 
 
@@ -163,9 +174,11 @@ namespace _2018_Group_Project
 
     class Infantry : unit
     {
-        public Infantry(string unitName) : base()
+        public Infantry(string unitName, int index) : base()
         {
             name = unitName;
+
+            unitIndex = index;
         }
 
         public override void print()
@@ -174,32 +187,39 @@ namespace _2018_Group_Project
 
 
             //user.TextUpdate(name);
-            
-           foreach(Window window in Application.Current.Windows)
-           {
-                if(window.GetType() == typeof(MainWindow))
-                {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + "\n";
-                }
-           }
-           
-            
 
-            
+            foreach (Window window in Application.Current.Windows)
+            {
+                if (window.GetType() == typeof(MainWindow))
+                {
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + " " + unitIndex + "\n";
+                }
+            }
+
+
+
+
         }
 
         public override void ReadIn(string name, string statline, int unitID, int unitIndex)
         {
 
+        }
+
+        public override void IndexUpdate(int x)
+        {
+            unitIndex = x;
         }
     }
 
     class Vehicle : unit
     {
 
-        public Vehicle(string unitName) : base()
+        public Vehicle(string unitName, int index) : base()
         {
             name = unitName;
+
+            unitIndex = index;
         }
 
         public override void print()
@@ -208,7 +228,7 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + " " + unitIndex + "\n";
                 }
             }
         }
@@ -216,14 +236,21 @@ namespace _2018_Group_Project
         public override void ReadIn(string name, string statline, int unitID, int unitIndex)
         {
 
+        }
+
+        public override void IndexUpdate(int x)
+        {
+            unitIndex = x;
         }
     }
 
     class Walker : unit
     {
-        public Walker(string unitName) : base()
+        public Walker(string unitName, int index) : base()
         {
             name = unitName;
+
+            unitIndex = index;
         }
 
         public override void print()
@@ -232,38 +259,61 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + " " + unitIndex + "\n";
                 }
             }
         }
 
         public override void ReadIn(string name, string statline, int unitID, int unitIndex)
         {
+            
+        }
 
+        public override void IndexUpdate(int x)
+        {
+            unitIndex = x;
         }
 
     }
-    /*
-    class dualLine : Infantry
+    
+    class dualLine : unit
     {
-        Infantry Store;
-        /*
-        public dualLine(Infantry user, string unitName) 
+        
+        
+        public dualLine(string unitName, int index, Infantry user) :base()
         {
-            Store = user;
-        }
+            name = unitName;
 
-        public override void print()
-        {
-            Store.print();
-            Console.WriteLine("DualLineInfantry!");
+            unitIndex = index;
+
+            Store = user;
         }
 
         public override void ReadIn(string name, string statline, int unitID, int unitIndex)
         {
 
         }
-        
+
+        public override void IndexUpdate(int x)
+        {
+            
+        }
+
+        public override void print()
+        {
+            Store.print();
+
+            foreach (Window window in Application.Current.Windows)
+            {
+                if (window.GetType() == typeof(MainWindow))
+                {
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "\n";
+
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + " " + unitIndex + "\n";
+                }
+            }
+        }
+
     }
-    */
+    
 }
