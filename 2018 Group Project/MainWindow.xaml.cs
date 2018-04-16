@@ -674,5 +674,10 @@ namespace _2018_Group_Project
         {
             newlist = new unitManager(); TextBox.Text = "New list made";
         }
+
+        private void FuturehomeofsaveList_Click(object sender, RoutedEventArgs e)
+        {
+            newlist.saveArmy();
+        }
     }
 }

@@ -26,6 +26,7 @@ namespace _2018_Group_Project
 
 
         private int UnitCount;
+        private int ptval;
 
         public unitManager()
         {
@@ -132,6 +133,32 @@ namespace _2018_Group_Project
             }
         }
 
+        public void saveArmy()
+        {
+
+            DateTime dateOnly = new DateTime();
+            string part1 = "Your Army List for 7th Edition The Horus Heresy";
+            string part2 = "Made on the date: ";
+            string part3 = "Your List is made up of: " + UnitCount + " units, for a total of: " + ptval + " points" ;
+            string part4 = dateOnly.ToString("d");
+
+            string text = part1 + System.Environment.NewLine + part2 + part4 + part3 + System.Environment.NewLine;
+                    
+            
+            System.IO.File.WriteAllText(@"Warhammer 40k Army List.txt", text);
+
+
+            for (int x = 0; x < UnitCount; x++)
+            {
+
+                UserList[x].save();   
+            }
+            //Console.WriteLine("PrintArmy");
+            
+            
+
+        }
+
 
 
 
@@ -161,6 +188,8 @@ namespace _2018_Group_Project
         }
 
         public abstract void print();
+
+        public abstract void save();
 
         public abstract void ReadIn(string name, string statline, int unitID, int unitIndex);
 
@@ -201,6 +230,15 @@ namespace _2018_Group_Project
 
         }
 
+        public override void save()
+        {
+            using (System.IO.StreamWriter file =
+               new System.IO.StreamWriter(@"Warhammer 40k Army List.txt", true))
+            {
+                file.WriteLine(unitIndex + " " + name);
+            }
+        }
+
         public override void ReadIn(string name, string statline, int unitID, int unitIndex)
         {
 
@@ -233,6 +271,15 @@ namespace _2018_Group_Project
             }
         }
 
+        public override void save()
+        {
+            using (System.IO.StreamWriter file =
+               new System.IO.StreamWriter(@"Warhammer 40k Army List.txt", true))
+            {
+                file.WriteLine(unitIndex + " " + name );
+            }
+        }
+
         public override void ReadIn(string name, string statline, int unitID, int unitIndex)
         {
 
@@ -261,6 +308,15 @@ namespace _2018_Group_Project
                 {
                     (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + " " + unitIndex + "\n";
                 }
+            }
+        }
+
+        public override void save()
+        {
+            using (System.IO.StreamWriter file =
+               new System.IO.StreamWriter(@"Warhammer 40k Army List.txt", true))
+            {
+                file.WriteLine(unitIndex + " " + name);
             }
         }
 
@@ -311,6 +367,16 @@ namespace _2018_Group_Project
 
                     (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + " " + unitIndex + "\n";
                 }
+            }
+        }
+        public override void save()
+        {
+            Store.save();
+
+            using (System.IO.StreamWriter file =
+               new System.IO.StreamWriter(@"Warhammer 40k Army List.txt", true))
+            {
+                file.WriteLine( name);
             }
         }
 
