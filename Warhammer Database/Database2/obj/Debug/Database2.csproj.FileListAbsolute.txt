@@ -1,0 +1,17 @@
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\bin\Debug\Warhammer.mdb
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\bin\Debug\Database2.exe.config
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\bin\Debug\Database2.exe
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\bin\Debug\Database2.pdb
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\MainWindow.g.cs
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\App.g.cs
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2_Content.g.cs
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2_MarkupCompile.cache
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2_MarkupCompile.lref
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\MainWindow.baml
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2.g.resources
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2.Properties.Resources.resources
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2.csproj.GenerateResource.cache
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2.csproj.CoreCompileInputs.cache
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2.exe
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2.pdb
+C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2.csprojResolveAssemblyReference.cache
