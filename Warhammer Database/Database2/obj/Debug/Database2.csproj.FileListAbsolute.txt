@@ -14,4 +14,3 @@ C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2.cspr
 C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2.csproj.CoreCompileInputs.cache
 C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2.exe
 C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2.pdb
-C:\Users\Nicholas Reid\source\repos\Database2\Database2\obj\Debug\Database2.csprojResolveAssemblyReference.cache
