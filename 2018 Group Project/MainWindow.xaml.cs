@@ -21,7 +21,7 @@ namespace _2018_Group_Project
     public partial class MainWindow : Window
     {
 
-        private unitManager newlist = new unitManager();
+        private unitManager newlist;
 
         public MainWindow()
         {
@@ -43,7 +43,7 @@ namespace _2018_Group_Project
         private void Button_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Praetor" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
 
         private void makelist_Click(object sender, RoutedEventArgs e)
-        { newlist = new unitManager();
+        { //newlist = new unitManager();
            UnitDisplay.Text = "New list made";
            TextBox.Text = "";
  
@@ -931,17 +931,17 @@ namespace _2018_Group_Project
 
         private void _2500Picker_Click(object sender, RoutedEventArgs e)
         {
-            newlist = new unitManager(); TextBox.Text = "New list made";
+            newlist = new unitManager(2500); TextBox.Text = "New list made";
         }
 
         private void _1500Picker_Click(object sender, RoutedEventArgs e)
         {
-            newlist = new unitManager(); TextBox.Text = "New list made";
+            newlist = new unitManager(1500); TextBox.Text = "New list made";
         }
 
         private void CustomPointConfirm_Click(object sender, RoutedEventArgs e)
         {
-            newlist = new unitManager(); TextBox.Text = "New list made";
+            newlist = new unitManager( Convert.ToInt32(PointBox.Text)); TextBox.Text = "New list made";
         }
 
         private void FuturehomeofsaveList_Click(object sender, RoutedEventArgs e)

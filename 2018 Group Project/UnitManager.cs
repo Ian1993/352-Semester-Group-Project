@@ -27,12 +27,18 @@ namespace _2018_Group_Project
 
         private int UnitCount;
         private int ptval;
+        private int ptkeeper;
+        private FileManager dataman;
 
-        public unitManager()
+        public unitManager(int pts)
         {
 
             //List<unit> temp = new List<unit>();
             UserList = new List<unit>();
+            ptval = pts;
+            ptkeeper = pts;
+            dataman = new FileManager();
+
 
             UnitCount = 0;
         }
@@ -40,21 +46,19 @@ namespace _2018_Group_Project
         {
             var Chars = UnitID.ToCharArray();
 
-            //Console.WriteLine(Chars[1] + " " + Chars[2] + " " + Chars[3] + " " + Chars[7]);
-
-            //Console.Read();
+            
 
             if (Chars[1] == '1')
             {
-                Console.WriteLine("Infantry!");
+                
 
                 if (Chars[7] == '1')
                 {
-                    Console.WriteLine("SingleLine!");
+                   
 
                     UserList.Add(new Infantry(unitName, UnitCount));
 
-                    //UserList.Insert(UnitCount, new Infantry());
+                    
                     UnitCount++;
                 }
                 else if (Chars[7] == '2')
@@ -62,7 +66,7 @@ namespace _2018_Group_Project
                     UserList.Add(new dualLine( unitName, UnitCount, new Infantry(unitName, UnitCount)));
 
 
-                    //UserList.Insert(UnitCount, new dualLine(new Infantry()));
+                    
 
                     UnitCount++;
                 }
@@ -72,9 +76,9 @@ namespace _2018_Group_Project
             {
                 UserList.Add(new Vehicle(unitName, UnitCount));
 
-                Console.WriteLine("Vehicle");
+                
 
-                //UserList.Insert(UnitCount, new Vehicle());
+               
 
                 UnitCount++;
             }
@@ -83,21 +87,13 @@ namespace _2018_Group_Project
             {
                 UserList.Add(new Walker(unitName, UnitCount));
 
-                Console.WriteLine("Walker");
+               
 
-                //UserList.Insert(UnitCount, new Walker());
+                
 
                 UnitCount++;
             }
-            /*
-            for(int x = 0; x < UnitCount; x++)
-            {
-                Console.WriteLine("PrintLoop");
-                UserList[x].print();
-            }
-            */
-
-            //Console.Read();
+            
 
         }
 
@@ -106,7 +102,7 @@ namespace _2018_Group_Project
 
             for (int x = 0; x < UnitCount; x++)
             {
-                //Console.WriteLine("PrintArmy");
+                
                 UserList[x].print();
             }
 
@@ -116,7 +112,7 @@ namespace _2018_Group_Project
         {
             int x = Convert.ToInt32(listindex);
 
-            Console.WriteLine("PrintUnit");
+            
             UserList[x].print();
 
         }
@@ -153,7 +149,7 @@ namespace _2018_Group_Project
 
                 UserList[x].save();   
             }
-            //Console.WriteLine("PrintArmy");
+            
             
             
 
@@ -212,10 +208,7 @@ namespace _2018_Group_Project
 
         public override void print()
         {
-            //Console.WriteLine("Infantry!");
-
-
-            //user.TextUpdate(name);
+            
 
             foreach (Window window in Application.Current.Windows)
             {
