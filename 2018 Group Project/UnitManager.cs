@@ -29,6 +29,10 @@ namespace _2018_Group_Project
         private int ptval;
         private int ptkeeper;
         private FileManager dataman;
+        static private int size = 8;
+        public string[] arr = new string[size];
+        public string[] arr1 = new string[size];
+        string query;
 
         public unitManager(int pts)
         {
@@ -38,11 +42,12 @@ namespace _2018_Group_Project
             ptval = pts;
             ptkeeper = pts;
             dataman = new FileManager();
+            
 
 
             UnitCount = 0;
         }
-        public void addUnit(string UnitID, string unitName)
+        public void addUnit(string UnitID)
         {
             var Chars = UnitID.ToCharArray();
 
@@ -92,8 +97,50 @@ namespace _2018_Group_Project
                 
 
                 UnitCount++;
-            }
+             }
             
+
+        }
+
+
+        public void readDB(string UnitID)
+        {
+            var Chars = UnitID.ToCharArray();
+
+
+        
+            if (Chars[1] == '1')
+            {
+
+
+                if (Chars[7] == '1')
+                {
+                    query = "SELECT * FROM Infantry Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
+
+                    
+
+
+                    
+                }
+                else if (Chars[7] == '2')
+                {
+                    query = "SELECT * FROM Infantry Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
+                    Chars[7] = '1';
+                    readDB(Convert.ToString(Chars));
+
+                }
+            }
+
+            else if (Chars[1] == '2')
+            {
+                query = "SELECT * FROM Vehicle Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
+            }
+
+            else if (Chars[1] == '3')
+            {
+                query = "SELECT * FROM Walker Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
+            }
+
 
         }
 
@@ -160,17 +207,19 @@ namespace _2018_Group_Project
 
     }
 
+
+
     abstract class unit
     {
         protected string name;
 
-        //protected string name2;
+        protected string name2;
 
-        //protected string name3;
+        protected string name3;
 
-        //protected int statline;
+        protected string statline;
 
-        //protected int unitID;
+        protected string unitID;
 
         protected int unitIndex;
 
