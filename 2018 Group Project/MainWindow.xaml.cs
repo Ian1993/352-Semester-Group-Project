@@ -56,7 +56,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01111601";
             string unitname = "Legion Praetor";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:11 unitid:1601";
@@ -69,7 +69,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01111801";
             string unitname = "Legion Centurion";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:11 unitid:1801";
@@ -84,7 +84,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01112601";
             string unitname = "Legion Command Squad";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:11 unitid:2601 and 2602";
@@ -98,7 +98,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01122801";
             string unitname = "Legion Veteran Tactical Squad";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:12 unitid:2801 and 2802";
@@ -113,7 +113,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01122901";
             string unitname = "Legion Destroyer Squad";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:12 unitid:2901 and 2902"; 
@@ -128,7 +128,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01123001";
             string unitname = "Legion Terminator Squad";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:12 unitid:3001 and 3002";
@@ -143,7 +143,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01123101";
             string unitname = "Techmarine Covenant";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:12 unitid:3101 and 3102";
@@ -158,7 +158,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01123201";
             string unitname = "Apothicarion Detachment";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:12 unitid:3201"; 
@@ -171,7 +171,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01123501";
             string unitname = "Legion Rapier Weapons Battery";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:12 unitid:3501 and 3502";
@@ -184,7 +184,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01134002";
             string unitname = "Legion Tactical Squad";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:13 unitid:4001, 4002, 4101, 4102";
@@ -197,7 +197,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01134201";
             string unitname = "Legion Breacher Siege-Squad";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:13 unitid:4201, 4202";
@@ -210,7 +210,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01134301";
             string unitname = "Legion Tactical Support Squad";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:13 unitid:4301, 4302";
@@ -223,7 +223,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01134401";
             string unitname = "Legion Reconnaissance Squad";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:13 unitid:4401"; 
@@ -236,7 +236,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01154801";
             string unitname = "Legion Seeker Squad";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid 15, unitid: 4801, 4802"; 
@@ -249,7 +249,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01154901";
             string unitname = "Legion Outrider Squad";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:15, unitid:4901, 4902";
@@ -262,7 +262,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01155001";
             string unitname = "Legion Attack Bike Squad";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:15 unitid: 5001";
@@ -275,7 +275,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01155101";
             string unitname = "Legion Jetbike Hunter Squadron";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:15 unitid: 5101, 5102";
@@ -288,7 +288,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01155401";
             string unitname = "Legion Tarantula Sentry-Gun Battery";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:15 unitid:5401, ";
@@ -301,7 +301,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01166001";
             string unitname = "Legion Jetbike Sky-slayer support squadron";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:6001, 6002"; 
@@ -315,7 +315,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01166201";
             string unitname = "Legion Heavy Support Squad";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:6201 6202";
@@ -328,7 +328,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02112501";
             string unitname = "Damocles Command Rhino";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:11 unitid:2501";
@@ -341,7 +341,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02144501";
             string unitname = "Legion Rhino Armoured Carier";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:4501"; 
@@ -354,7 +354,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02144601";
             string unitname = "Legion Drop Pod";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:14 unitid:4601";
@@ -367,7 +367,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02144701";
             string unitname = "Legion Dreadnought Drop Pod";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:14 unitid:4701";
@@ -380,7 +380,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02155201";
             string unitname = "Primaris-Lightning Strike Fighter";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:15 unitid:5201";
@@ -393,7 +393,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02155501";
             string unitname = "Anvillus Pattern Dreadclaw Drop Pod";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:15 unitid:5501";
@@ -406,7 +406,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02155601";
             string unitname = "Legion Land Speeder Squadron";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:15 unitid:5601";
@@ -420,7 +420,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02155701";
             string unitname = "Legion Storm Eagle Assault Gunship";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:15 unitid:5701";
@@ -434,7 +434,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02155801";
             string unitname = "Xiphon Pattern Interceptor";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:15 unitid:5801"; 
@@ -448,7 +448,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02155901";
             string unitname = "Legion Javelin Attack Speeder Squadron";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:15 unitid:5901";
@@ -462,7 +462,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02169001";
             string unitname = "DeathStorm Drop Pod";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:9001";
@@ -476,7 +476,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02166301";
             string unitname = "Legion Predator Strike Squadron";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:6301";
@@ -489,7 +489,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02166401";
             string unitname = "Legion Land Raider Battle Squadron Phobos";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:6401";
@@ -503,7 +503,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02166411";
             string unitname = "Legion Land Raider Battle Squadron Proteus";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:6411";
@@ -516,7 +516,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02166421";
             string unitname = "Legion Land Raider Battle Squadron Proteus";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:6421";
@@ -530,7 +530,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02166601";
             string unitname = "Legion Fire Raptor Gunship";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "class id16 unitid:6601";
@@ -543,7 +543,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02166701";
             string unitname = "Achilles-Alpha Pattern Land Raider";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:6701";
@@ -556,7 +556,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02166801";
             string unitname = "Legion Basilisk Artillery Squadron";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid6801";
@@ -570,7 +570,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02166811";
             string unitname = "Legion Basilisk Artillery Squadron";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:6811";
@@ -584,7 +584,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02166821";
             string unitname = "Legion Whirlwind Artillery Tank Squadron";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:6821";
@@ -597,7 +597,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02166801";
             string unitname = "Legion Vindicator Siege Tank Squadron";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:6901";
@@ -610,7 +610,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02167001";
             string unitname = "Legion Spartan Assault Tank";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:7001"; 
@@ -624,7 +624,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02167101";
             string unitname = "Legion Caestus Assault Ram";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:7101"; 
@@ -636,7 +636,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02167201";
             string unitname = "Sicaran Venator Tank Destroyer";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
         }
@@ -649,7 +649,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02167301";
             string unitname = "Legion Sicaran Battle Tank";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:7301";
@@ -663,7 +663,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02167401";
             string unitname = "Legion Kharybdis Assault Claw";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:7401";
@@ -677,7 +677,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02168001";
             string unitname = "Legion Whirlwind Scorpius";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:8001"; 
@@ -691,7 +691,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02168101";
             string unitname = "Legion Malcador Assault Tank";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:8101";
@@ -705,7 +705,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02178201";
             string unitname = "Legion Cerberus Heavy Tank Destroyer";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:17 unitid:8201";
@@ -718,7 +718,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02178301";
             string unitname = "Legion Typhon Heavy Siege Tank";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:17 unitid:8301";
@@ -731,7 +731,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02178401";
             string unitname = "Legion Falchion Super-Heavy Tank Destroyer";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:17 unitid:8401";
@@ -744,7 +744,7 @@ namespace _2018_Group_Project
         {
             string unitid = "01111601";
             string unitname = "Legion Stormblade Super-Heavy Tank";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:17 unitid:8501"; 
@@ -756,7 +756,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02178601";
             string unitname = "Legion Fellblade Super-heavy Tank";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:17 unitid:8601";
@@ -769,7 +769,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02178701";
             string unitname = "Legion Glaive Super-heavy Tank";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:17 unitid:8701";
@@ -782,7 +782,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02178801";
             string unitname = "Legion Thunderhawk Transporter";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:17 unitid:8801";
@@ -795,7 +795,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02178901";
             string unitname = "Legion Thunderhawk Gunship";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:17 unitid:8901";
@@ -808,7 +808,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02179001";
             string unitname = "Legion Mastodon Heavy Assault Transport";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:17 unitid:9001";
@@ -821,7 +821,7 @@ namespace _2018_Group_Project
         {
             string unitid = "02179201";
             string unitname = "Sokar Pattern Stormbird";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "clasid:17 unitid:9201";
@@ -834,7 +834,7 @@ namespace _2018_Group_Project
         {
             string unitid = "03123301";
             string unitname = "Legion Dreadnought Talon";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:12 unitid:3301"; 
@@ -847,7 +847,7 @@ namespace _2018_Group_Project
         {
             string unitid = "03123401";
             string unitname = "Contemptor Dreadnought Talon";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:12 unitid:3401";
@@ -860,7 +860,7 @@ namespace _2018_Group_Project
         {
             string unitid = "03123601";
             string unitname = "Legion Mortis Dreadnought";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:12 unitid:3601"; 
@@ -873,7 +873,7 @@ namespace _2018_Group_Project
         {
             string unitid = "03123701";
             string unitname = "Contemptor-Mortis Dreadnought";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:12 unitid:3701";
@@ -886,7 +886,7 @@ namespace _2018_Group_Project
         {
             string unitid = "03123801";
             string unitname = "Contemptor Cortus Class Dreadnought Talon";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid12 unitid:3801";
@@ -899,7 +899,7 @@ namespace _2018_Group_Project
         {
             string unitid = "03167601";
             string unitname = "Leviathan Pattern Siege Dreadnought Talon";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid7601";
@@ -912,7 +912,7 @@ namespace _2018_Group_Project
         {
             string unitid = "03167801";
             string unitname = "Deredeo Pattern Dreadnought";
-            newlist.addUnit(unitid, unitname);
+            newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:? unitid:3301"; 
