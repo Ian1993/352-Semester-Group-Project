@@ -19,17 +19,23 @@ namespace _2018_Group_Project
 {
     class FileManager
     {
-		public void accDatabase(string query)
+		public void accDatabase(string query, string[] data)
 		{
 			OleDbConnection cn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\Nicholas Reid\\source\\repos\\2018 Group Project\\Warhammer.mdb");
-			string data = "";
 
 			OleDbCommand cmd = new OleDbCommand(query, cn);
 			cn.Open();
 			OleDbDataReader reader = cmd.ExecuteReader();
 			while (reader.Read())
 			{
-				data += reader[0].ToString() + reader[1].ToString() + reader[2].ToString() + " " + reader[3].ToString() + " " + reader[4].ToString() + " " + reader[5].ToString() + " " + reader[6].ToString() + " " + reader[7].ToString() + " " + "\n";
+				data[0] = reader[0].ToString();
+				data[1] = reader[1].ToString();
+				data[2] = reader[2].ToString();
+				data[3] = reader[3].ToString();
+				data[4] = reader[4].ToString();
+				data[5] = reader[5].ToString();
+				data[6] = reader[6].ToString();
+				data[7] = reader[7].ToString();
 			}
 			//TextBox.Text = data;
 			cn.Close();
