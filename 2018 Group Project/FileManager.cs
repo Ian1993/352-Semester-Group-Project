@@ -28,14 +28,13 @@ namespace _2018_Group_Project
 			OleDbDataReader reader = cmd.ExecuteReader();
 			while (reader.Read())
 			{
-				data[0] = reader[0].ToString();
-				data[1] = reader[1].ToString();
-				data[2] = reader[2].ToString();
-				data[3] = reader[3].ToString();
-				data[4] = reader[4].ToString();
-				data[5] = reader[5].ToString();
-				data[6] = reader[6].ToString();
-				data[7] = reader[7].ToString();
+				data[0] = reader[0].ToString(); // print TableID
+				data[1] = reader[1].ToString(); // print ClassID
+				data[2] = reader[2].ToString(); // print UnitID
+				data[3] = reader[3].ToString(); // print UnitName
+				data[4] = reader[4].ToString(); // print IndexID
+				data[5] = reader[5].ToString(); // print PointValue
+				data[6] = reader[6].ToString(); // print Statline
 			}
 			//TextBox.Text = data;
 			cn.Close();
