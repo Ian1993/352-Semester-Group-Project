@@ -141,7 +141,7 @@ namespace _2018_Group_Project
                 query = "SELECT * FROM Walker Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
             }
 
-            dataman.accDatabase(query, arr);
+            dataman.accDatabase(query, ref arr);
 
             foreach (Window window in Application.Current.Windows)
             {
