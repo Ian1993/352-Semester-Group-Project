@@ -43,7 +43,7 @@ namespace _2018_Group_Project
             ptkeeper = pts;
             dataman = new FileManager();
             
-
+            
 
             UnitCount = 0;
         }
@@ -61,14 +61,14 @@ namespace _2018_Group_Project
                 {
                    
 
-                    UserList.Add(new Infantry(unitName, UnitCount));
+                    UserList.Add(new Infantry(arr[3], arr[4], arr[5], arr[6], UnitCount));
 
                     
                     UnitCount++;
                 }
                 else if (Chars[7] == '2')
                 {
-                    UserList.Add(new dualLine( unitName, UnitCount, new Infantry(unitName, UnitCount)));
+                    UserList.Add(new dualLine(arr[3], arr[4], arr[5], arr[6], UnitCount, new Infantry(arr[3], arr[4], arr[5], arr[6], UnitCount)));
 
 
                     
@@ -79,7 +79,7 @@ namespace _2018_Group_Project
 
             else if (Chars[1] == '2')
             {
-                UserList.Add(new Vehicle(unitName, UnitCount));
+                UserList.Add(new Vehicle(arr[3], arr[4], arr[5], arr[6], UnitCount));
 
                 
 
@@ -90,7 +90,7 @@ namespace _2018_Group_Project
 
             else if (Chars[1] == '3')
             {
-                UserList.Add(new Walker(unitName, UnitCount));
+                UserList.Add(new Walker(arr[3], arr[4], arr[5], arr[6], UnitCount));
 
                
 
@@ -139,6 +139,17 @@ namespace _2018_Group_Project
             else if (Chars[1] == '3')
             {
                 query = "SELECT * FROM Walker Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
+            }
+
+            foreach (Window window in Application.Current.Windows)
+            {
+                if (window.GetType() == typeof(MainWindow))
+                {
+                    (window as MainWindow).UnitDisplay.Text = " ";
+                    (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + arr[3] + "\n";
+                    (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + arr[4] + " " + arr[5] + "\n";
+                    (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + arr[6] + "\n";
+                }
             }
 
 
@@ -211,11 +222,11 @@ namespace _2018_Group_Project
 
     abstract class unit
     {
-        protected string name;
+        protected string name;  //name,bookindex,pointvalue,statline
 
-        protected string name2;
+        protected string pointvalue;
 
-        protected string name3;
+        protected string bookindex;
 
         protected string statline;
 
@@ -248,9 +259,15 @@ namespace _2018_Group_Project
 
     class Infantry : unit
     {
-        public Infantry(string unitName, int index) : base()
+        public Infantry(string unitName,string bookindex1,string pointvalue1,string statline1, int index) : base()
         {
             name = unitName;
+
+            bookindex = bookindex1;
+
+            pointvalue = pointvalue1;
+
+            statline = statline1;
 
             unitIndex = index;
         }
@@ -263,7 +280,9 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + " " + unitIndex + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + unitIndex + " " + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + bookindex + " " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + pointvalue + "\n";
                 }
             }
 
@@ -295,9 +314,15 @@ namespace _2018_Group_Project
     class Vehicle : unit
     {
 
-        public Vehicle(string unitName, int index) : base()
+        public Vehicle(string unitName, string bookindex1, string pointvalue1, string statline1, int index) : base()
         {
             name = unitName;
+
+            bookindex = bookindex1;
+
+            pointvalue = pointvalue1;
+
+            statline = statline1;
 
             unitIndex = index;
         }
@@ -308,7 +333,9 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + " " + unitIndex + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + unitIndex + " " + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + bookindex + " " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + pointvalue + "\n";
                 }
             }
         }
@@ -335,9 +362,17 @@ namespace _2018_Group_Project
 
     class Walker : unit
     {
-        public Walker(string unitName, int index) : base()
+        public Walker(string unitName, string bookindex1, string pointvalue1, string statline1, int index) : base()
         {
             name = unitName;
+
+            unitIndex = index; name = unitName;
+
+            bookindex = bookindex1;
+
+            pointvalue = pointvalue1;
+
+            statline = statline1;
 
             unitIndex = index;
         }
@@ -348,7 +383,9 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + " " + unitIndex + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + unitIndex + " " + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + bookindex + " " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + pointvalue + "\n";
                 }
             }
         }
@@ -378,9 +415,15 @@ namespace _2018_Group_Project
     {
         
         
-        public dualLine(string unitName, int index, Infantry user) :base()
+        public dualLine(string unitName, string bookindex1, string pointvalue1, string statline1, int index, Infantry user) :base()
         {
             name = unitName;
+
+            bookindex = bookindex1;
+
+            pointvalue = pointvalue1;
+
+            statline = statline1;
 
             unitIndex = index;
 
@@ -405,9 +448,9 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "\n";
-
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + name + " " + unitIndex + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + unitIndex + " " + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + bookindex + " " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + pointvalue + "\n";
                 }
             }
         }

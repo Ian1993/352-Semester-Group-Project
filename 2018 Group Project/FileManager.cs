@@ -28,7 +28,7 @@ namespace _2018_Group_Project
 			OleDbDataReader reader = cmd.ExecuteReader();
 			while (reader.Read())
 			{
-				data[0] = reader[0].ToString(); // print TableID
+				data[0] = reader[0].ToString(); // print TableID  arr[0],arr[1],arr[2],arr[3],arr[4],arr[5],arr[5],arr[6]
 				data[1] = reader[1].ToString(); // print ClassID
 				data[2] = reader[2].ToString(); // print UnitID
 				data[3] = reader[3].ToString(); // print UnitName
