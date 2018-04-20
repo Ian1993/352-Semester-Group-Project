@@ -160,8 +160,9 @@ namespace _2018_Group_Project
 
             for (int x = 0; x < UnitCount; x++)
             {
-                
-                UserList[x].print();
+
+				UserList[x].print();
+				
             }
 
         }
