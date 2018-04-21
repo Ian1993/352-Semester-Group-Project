@@ -51,7 +51,7 @@ namespace _2018_Group_Project
         {
             var Chars = UnitID.ToCharArray();
 
-            
+			readDB(UnitID);
 
             if (Chars[1] == '1')
             {
@@ -68,7 +68,7 @@ namespace _2018_Group_Project
                 }
                 else if (Chars[7] == '2')
                 {
-                    UserList.Add(new dualLine(arr[3], arr[4], arr[5], arr[6], UnitCount, new Infantry(arr[3], arr[4], arr[5], arr[6], UnitCount)));
+                    UserList.Add(new dualLine(arr1[3], arr1[4], arr1[5], arr1[6], UnitCount, new Infantry(arr[3], arr[4], arr[5], arr[6], UnitCount)));
 
 
                     
@@ -106,8 +106,9 @@ namespace _2018_Group_Project
         public void readDB(string UnitID)
         {
             var Chars = UnitID.ToCharArray();
+			string dualID;
 
-
+			
         
             if (Chars[1] == '1')
             {
@@ -125,20 +126,22 @@ namespace _2018_Group_Project
                 else if (Chars[7] == '2')
                 {
                     query = "SELECT * FROM Infantry Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
-                    Chars[7] = '1';
-                    readDB(Convert.ToString(Chars));
+					dataman.accDatabase(query, ref arr1);
+					Chars[7] = '1';
+					dualID = Chars[0] + "" + Chars[1] + "" + Chars[2] + "" + Chars[3] + "" + Chars[4] + "" + Chars[5] + "" + Chars[6] + "" + Chars[7] + "";
+					readDB(dualID);
 
                 }
             }
 
             else if (Chars[1] == '2')
             {
-                query = "SELECT * FROM Vehicle Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
+                query = "SELECT * FROM Vehicles Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
             }
 
             else if (Chars[1] == '3')
             {
-                query = "SELECT * FROM Walker Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
+                query = "SELECT * FROM Walkers Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
             }
 
             dataman.accDatabase(query, ref arr);
