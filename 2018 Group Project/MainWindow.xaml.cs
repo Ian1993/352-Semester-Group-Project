@@ -97,7 +97,7 @@ namespace _2018_Group_Project
 
         private void addCommandSquad(object send, RoutedEventArgs e)
         {
-            unitid = "01112601";
+            unitid = "01112602";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -113,7 +113,7 @@ namespace _2018_Group_Project
 
         private void addLegionVeteranTacticalSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01122801";
+            string unitid = "01122802";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -130,7 +130,7 @@ namespace _2018_Group_Project
 
         private void addLegionDestroyerSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01122901";
+            string unitid = "01122902";
             string unitname = "Legion Destroyer Squad";
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -145,7 +145,7 @@ namespace _2018_Group_Project
 
         private void addLegionTerminatorSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01123001";
+            string unitid = "01123002";
             string unitname = "Legion Terminator Squad";
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -160,7 +160,7 @@ namespace _2018_Group_Project
 
         private void addTechmarineCovenant(object sender, RoutedEventArgs e)
         {
-            string unitid = "01123101";
+            string unitid = "01123102";
             string unitname = "Techmarine Covenant";
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -188,7 +188,7 @@ namespace _2018_Group_Project
 
         private void addLegionRapierWeaponsBattery(object sender, RoutedEventArgs e)
         {
-            string unitid = "01123501";
+            string unitid = "01123502";
             string unitname = "Legion Rapier Weapons Battery";
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -214,7 +214,7 @@ namespace _2018_Group_Project
 
         private void addLegionBreacherSiegeSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01134201";
+            string unitid = "01134202";
             string unitname = "Legion Breacher Siege-Squad";
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -227,7 +227,7 @@ namespace _2018_Group_Project
 
         private void addLegionTacticalSupportSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01134301";
+            string unitid = "01134302";
             string unitname = "Legion Tactical Support Squad";
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -253,7 +253,7 @@ namespace _2018_Group_Project
 
         private void addLegionSeekerSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01154801";
+            string unitid = "01154802";
             string unitname = "Legion Seeker Squad";
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -266,7 +266,7 @@ namespace _2018_Group_Project
 
         private void addLegionOutriderSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01154901";
+            string unitid = "01154902";
             string unitname = "Legion Outrider Squad";
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -292,7 +292,7 @@ namespace _2018_Group_Project
 
         private void addLegionJetbikeHunterSquadron_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "01155101";
+            string unitid = "01155102";
             string unitname = "Legion Jetbike Hunter Squadron";
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -318,7 +318,7 @@ namespace _2018_Group_Project
 
         private void addLegionJetbikeSkyslayerSupportSquadron(object sender, RoutedEventArgs e)
         {
-            string unitid = "01166001";
+            string unitid = "01166002";
             string unitname = "Legion Jetbike Sky-slayer support squadron";
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -332,7 +332,7 @@ namespace _2018_Group_Project
 
         private void addLegionHeavySupportSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01166201";
+            string unitid = "01166202";
             string unitname = "Legion Heavy Support Squad";
             newlist.addUnit(unitid);
             TextBox.Text = "";
