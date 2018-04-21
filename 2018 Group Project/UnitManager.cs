@@ -51,7 +51,7 @@ namespace _2018_Group_Project
         {
             var Chars = UnitID.ToCharArray();
 
-			readDB(UnitID);
+			
 
             if (Chars[1] == '1')
             {
@@ -118,10 +118,10 @@ namespace _2018_Group_Project
                 {
                     query = "SELECT * FROM Infantry Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
 
-                    
+
+                    dataman.accDatabase(query, ref arr);
 
 
-                    
                 }
                 else if (Chars[7] == '2')
                 {
@@ -137,14 +137,19 @@ namespace _2018_Group_Project
             else if (Chars[1] == '2')
             {
                 query = "SELECT * FROM Vehicles Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
+                dataman.accDatabase(query, ref arr);
+
             }
+
 
             else if (Chars[1] == '3')
             {
                 query = "SELECT * FROM Walkers Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
+
+                dataman.accDatabase(query, ref arr);
             }
 
-            dataman.accDatabase(query, ref arr);
+            //dataman.accDatabase(query, ref arr);
 
             foreach (Window window in Application.Current.Windows)
             {
@@ -300,7 +305,7 @@ namespace _2018_Group_Project
         public override void save()
         {
             using (System.IO.StreamWriter file =
-               new System.IO.StreamWriter(@"Warhammer 40k Army List.txt", true))
+               new System.IO.StreamWriter("Warhammer 40k Army List.txt", true))
             {
                 file.WriteLine(unitIndex + " " + name);
             }
@@ -349,7 +354,7 @@ namespace _2018_Group_Project
         public override void save()
         {
             using (System.IO.StreamWriter file =
-               new System.IO.StreamWriter(@"Warhammer 40k Army List.txt", true))
+               new System.IO.StreamWriter("Warhammer 40k Army List.txt", true))
             {
                 file.WriteLine(unitIndex + " " + name );
             }
@@ -399,7 +404,7 @@ namespace _2018_Group_Project
         public override void save()
         {
             using (System.IO.StreamWriter file =
-               new System.IO.StreamWriter(@"Warhammer 40k Army List.txt", true))
+               new System.IO.StreamWriter("Warhammer 40k Army List.txt", true))
             {
                 file.WriteLine(unitIndex + " " + name);
             }
@@ -465,7 +470,7 @@ namespace _2018_Group_Project
             Store.save();
 
             using (System.IO.StreamWriter file =
-               new System.IO.StreamWriter(@"Warhammer 40k Army List.txt", true))
+               new System.IO.StreamWriter("Warhammer 40k Army List.txt", true))
             {
                 file.WriteLine( name);
             }
