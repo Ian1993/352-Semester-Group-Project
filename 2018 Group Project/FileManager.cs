@@ -21,7 +21,7 @@ namespace _2018_Group_Project
     {
 		public void accDatabase(string query, ref string[] data)
 		{
-			OleDbConnection cn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\Nicholas Reid\\source\\repos\\2018 Group Project\\Warhammer.mdb");
+			OleDbConnection cn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:..\\Warhammer.mdb");
 
 			OleDbCommand cmd = new OleDbCommand(query, cn);
 			cn.Open();

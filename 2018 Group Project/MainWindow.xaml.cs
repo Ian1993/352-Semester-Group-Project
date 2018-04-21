@@ -34,7 +34,7 @@ namespace _2018_Group_Project
 
         private void savelist_Click(object sender, RoutedEventArgs e)
         {
-            UnitDisplay.Text = "SaveListNotImplemented";
+            newlist.saveArmy();
         }
         private void printarmy_Click(object sender, RoutedEventArgs e)
         {
@@ -57,15 +57,15 @@ namespace _2018_Group_Project
         private void Button_Click(object sender, RoutedEventArgs e) {
 
             unitid = "01111601";
-            newlist.addUnit(unitid);
-            //UnitDisplay.Text = "Legion Praetor" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information";
+            newlist.readDB(unitid);
+            
 
         }
 
         private void addLegionPraetor(object sender, RoutedEventArgs e)
         {
             unitid = "01111601";
-            //string unitname = "Legion Praetor";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -74,7 +74,8 @@ namespace _2018_Group_Project
 
 
         private void Button_Click_1(object sender, RoutedEventArgs e) {
-
+            unitid = "01111801";
+            newlist.addUnit(unitid);
 
         }
 
@@ -91,6 +92,8 @@ namespace _2018_Group_Project
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            unitid = "01112601";
+            newlist.addUnit(unitid);
 
         }
 
@@ -107,13 +110,14 @@ namespace _2018_Group_Project
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-
+            unitid = "01122801";
+            newlist.addUnit(unitid);
         }
 
 
         private void addLegionVeteranTacticalSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01122801";
+            unitid = "01122801";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -124,14 +128,15 @@ namespace _2018_Group_Project
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-
+            unitid = "01122901";
+            newlist.addUnit(unitid);
         }
 
 
         private void addLegionDestroyerSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01122901";
-            string unitname = "Legion Destroyer Squad";
+            unitid = "01122901";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -140,13 +145,17 @@ namespace _2018_Group_Project
 
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
-        { UnitDisplay.Text = "Legion Terminator Squad" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        {
+            unitid = "01123001";
+            newlist.addUnit(unitid);
+
+        }
 
 
         private void addLegionTerminatorSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01123001";
-            string unitname = "Legion Terminator Squad";
+            unitid = "01123001";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -155,13 +164,17 @@ namespace _2018_Group_Project
 
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
-        { UnitDisplay.Text = " Techmarine Covenant" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        {
+
+            unitid = "01123101";
+            newlist.addUnit(unitid);
+        }
 
 
         private void addTechmarineCovenant(object sender, RoutedEventArgs e)
         {
-            string unitid = "01123101";
-            string unitname = "Techmarine Covenant";
+            unitid = "01123101";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -170,13 +183,17 @@ namespace _2018_Group_Project
 
 
         private void Button_Click_7(object sender, RoutedEventArgs e)
-        { UnitDisplay.Text = "Apothicarion Detachment" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        {
+            unitid = "01123201";
+            newlist.addUnit(unitid);
+
+        }
 
 
         private void addApothicarionDetachment(object sender, RoutedEventArgs e)
         {
-            string unitid = "01123201";
-            string unitname = "Apothicarion Detachment";
+            unitid = "01123201";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -184,12 +201,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void Button_Click_8(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Rapier Weapons Battery" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void Button_Click_8(object sender, RoutedEventArgs e) {
+            unitid = "01123501";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionRapierWeaponsBattery(object sender, RoutedEventArgs e)
         {
-            string unitid = "01123501";
-            string unitname = "Legion Rapier Weapons Battery";
+            unitid = "01123501";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -197,12 +217,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void Button_Click_9(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Tactical Squad" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void Button_Click_9(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionTacticalSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01134002";
-            string unitname = "Legion Tactical Squad";
+            unitid = "01134002";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -210,12 +233,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void Button_Click_10(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Breacher Siege-Squad" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void Button_Click_10(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionBreacherSiegeSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01134201";
-            string unitname = "Legion Breacher Siege-Squad";
+            unitid = "01134201";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -223,12 +249,17 @@ namespace _2018_Group_Project
         }
 
 
-        private void Button_Click_11(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Tactical Support Squad" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void Button_Click_11(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+
+
+        }
 
         private void addLegionTacticalSupportSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01134301";
-            string unitname = "Legion Tactical Support Squad";
+            unitid = "01134301";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -236,12 +267,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void Button_Click_12(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Reconnaissance Squad" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void Button_Click_12(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionReconnaissanceSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01134401";
-            string unitname = "Legion Reconnaissance Squad";
+            unitid = "01134401";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -249,12 +283,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void legonseekersquad_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Seeker Squad" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void legonseekersquad_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionSeekerSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01154801";
-            string unitname = "Legion Seeker Squad";
+            unitid = "01154801";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -262,12 +299,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionOutriderSquad_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Outrider Squad" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionOutriderSquad_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionOutriderSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01154901";
-            string unitname = "Legion Outrider Squad";
+              unitid = "01154901";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -275,12 +315,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void Legion_Attack_Bike_Squad_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Attack Bike Squad" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void Legion_Attack_Bike_Squad_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionAttackBikeSquad_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "01155001";
-            string unitname = "Legion Attack Bike Squad";
+              unitid = "01155001";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -288,12 +331,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionJetbikeHunterSquadron_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Jetbike Hunter Squadron" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionJetbikeHunterSquadron_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionJetbikeHunterSquadron_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "01155101";
-            string unitname = "Legion Jetbike Hunter Squadron";
+              unitid = "01155101";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -301,12 +347,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void Legiontarantulasentrygunbattery_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Tarantula Sentry Gun-Battery" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void Legiontarantulasentrygunbattery_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionTarantulaSentryGunBattery(object sender, RoutedEventArgs e)
         {
-            string unitid = "01155401";
-            string unitname = "Legion Tarantula Sentry-Gun Battery";
+              unitid = "01155401";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -314,12 +363,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void Legionjetbikesky_slayersupportsquadron_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Jetbike Sky-Slayer Support Squadron" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void Legionjetbikesky_slayersupportsquadron_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionJetbikeSkyslayerSupportSquadron(object sender, RoutedEventArgs e)
         {
-            string unitid = "01166001";
-            string unitname = "Legion Jetbike Sky-slayer support squadron";
+              unitid = "01166001";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -328,12 +380,15 @@ namespace _2018_Group_Project
 
 
 
-        private void Legionheavysupportsquad_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Heavy Support Squad" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void Legionheavysupportsquad_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionHeavySupportSquad(object sender, RoutedEventArgs e)
         {
-            string unitid = "01166201";
-            string unitname = "Legion Heavy Support Squad";
+              unitid = "01166201";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -341,12 +396,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void DamoclesCommandRhino_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Damocles Command Rhino" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void DamoclesCommandRhino_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addDamoclesCommandRhino(object sender, RoutedEventArgs e)
         {
-            string unitid = "02112501";
-            string unitname = "Damocles Command Rhino";
+              unitid = "02112501";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -354,12 +412,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionRhinoArmouredCarrier__Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Rhino Armoured Carrier" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionRhinoArmouredCarrier__Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionRhinoArmouredCarrier(object sender, RoutedEventArgs e)
         {
-            string unitid = "02144501";
-            string unitname = "Legion Rhino Armoured Carier";
+              unitid = "02144501";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -367,12 +428,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionDropPod_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Drop Pod" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionDropPod_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionDropPod(object sender, RoutedEventArgs e)
         {
-            string unitid = "02144601";
-            string unitname = "Legion Drop Pod";
+              unitid = "02144601";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -380,12 +444,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionDreadnoughtDropPod_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Dreadnought Drop Pod" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionDreadnoughtDropPod_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionDreadnoughtDropPod(object sender, RoutedEventArgs e)
         {
-            string unitid = "02144701";
-            string unitname = "Legion Dreadnought Drop Pod";
+              unitid = "02144701";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -393,12 +460,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void PrimarisLightningStrikeFighter_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Primaris-Lightning Strike Fighter" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void PrimarisLightningStrikeFighter_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addPrimarisLightningStrikeFighter(object sender, RoutedEventArgs e)
         {
-            string unitid = "02155201";
-            string unitname = "Primaris-Lightning Strike Fighter";
+              unitid = "02155201";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -406,12 +476,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void AnvillusPatternDreadclawDropPod_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Anvillus Pattern Dreadclaw Drop Pod" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void AnvillusPatternDreadclawDropPod_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addAnvillusPatternDreadclawDropPod(object sender, RoutedEventArgs e)
         {
-            string unitid = "02155501";
-            string unitname = "Anvillus Pattern Dreadclaw Drop Pod";
+              unitid = "02155501";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -419,12 +492,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionLandSpeederSquadron_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Land Speeder Squadron" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionLandSpeederSquadron_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionLandSpeederSquadron_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02155601";
-            string unitname = "Legion Land Speeder Squadron";
+              unitid = "02155601";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -433,12 +509,15 @@ namespace _2018_Group_Project
 
 
 
-        private void LegionStormEagleAssaultGunship_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Storm Eagle Assault Gunship" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionStormEagleAssaultGunship_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionStormEagleAssaultGunship_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02155701";
-            string unitname = "Legion Storm Eagle Assault Gunship";
+              unitid = "02155701";
+         
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -447,12 +526,15 @@ namespace _2018_Group_Project
 
 
 
-        private void XiphonPatternInterceptor_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Xiphon Pattern Interceptor" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void XiphonPatternInterceptor_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addXiphonPatternInterceptor_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02155801";
-            string unitname = "Xiphon Pattern Interceptor";
+              unitid = "02155801";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -461,12 +543,15 @@ namespace _2018_Group_Project
 
 
 
-        private void LegionJavelinAttackSpeederSquadron_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Javelin Attack Speeder Squadron" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionJavelinAttackSpeederSquadron_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionJavelinAttackSpeederSquadron_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02155901";
-            string unitname = "Legion Javelin Attack Speeder Squadron";
+              unitid = "02155901";
+          
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -475,12 +560,15 @@ namespace _2018_Group_Project
 
 
 
-        private void DeathStormDropPod_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "DeathStorm Drop Pod" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void DeathStormDropPod_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addDeathStormDropPod_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02169001";
-            string unitname = "DeathStorm Drop Pod";
+              unitid = "02169001";
+          
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -489,12 +577,15 @@ namespace _2018_Group_Project
 
 
 
-        private void LegionPredatorStrikeSquadron_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Predator Strike Squadron" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionPredatorStrikeSquadron_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionPredatorStrikeSquadron_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02166301";
-            string unitname = "Legion Predator Strike Squadron";
+              unitid = "02166301";
+          
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -502,12 +593,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionLandRaiderBattleSquadronPhobos_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Land Raider Battle Squadron Phobos" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionLandRaiderBattleSquadronPhobos_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionLandRaiderBattleSquadronPhobos_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02166401";
-            string unitname = "Legion Land Raider Battle Squadron Phobos";
+              unitid = "02166401";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -516,12 +610,15 @@ namespace _2018_Group_Project
 
 
 
-        private void LegionLandRaiderBattleSquadronProteus_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Land Raider Battle Squadron Proteus" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionLandRaiderBattleSquadronProteus_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionLandRaiderBattleSquadronProteus_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02166411";
-            string unitname = "Legion Land Raider Battle Squadron Proteus";
+              unitid = "02166411";
+        
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -529,12 +626,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionLandRaiderBattleSquadronAchilles_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Land Raider Battle Squadron Achilles" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionLandRaiderBattleSquadronAchilles_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionLandRaiderBattleSquadronAchilles_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02166421";
-            string unitname = "Legion Land Raider Battle Squadron Proteus";
+              unitid = "02166421";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -543,12 +643,15 @@ namespace _2018_Group_Project
 
 
 
-        private void LegionFireRaptorGunship_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Fire Raptor Gunship" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionFireRaptorGunship_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionFireRaptorGunship_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02166601";
-            string unitname = "Legion Fire Raptor Gunship";
+              unitid = "02166601";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -556,12 +659,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void AchillesAlphaPatternLandRaider_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Achilles-Alpha Pattern Land Raider" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void AchillesAlphaPatternLandRaider_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addAchillesAlphaPatternLandRaider_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02166701";
-            string unitname = "Achilles-Alpha Pattern Land Raider";
+              unitid = "02166701";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -569,12 +675,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionBasiliskArtillerySquadron_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Basilisk Artillery Squadron" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionBasiliskArtillerySquadron_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionBasiliskArtillerySquadron_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02166801";
-            string unitname = "Legion Basilisk Artillery Squadron";
+              unitid = "02166801";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -583,12 +692,15 @@ namespace _2018_Group_Project
 
 
 
-        private void LegionMedusaArtilleryTankSquadron_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Medusa Artillery Tank Squadron" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionMedusaArtilleryTankSquadron_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionMedusaArtilleryTankSquadron_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02166811";
-            string unitname = "Legion Basilisk Artillery Squadron";
+              unitid = "02166811";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -597,12 +709,15 @@ namespace _2018_Group_Project
 
 
 
-        private void LegionWhirlwindArtilleryTankSquadron_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Whirlwind Artillery Tank Squadron" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionWhirlwindArtilleryTankSquadron_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionWhirlwindArtilleryTankSquadron_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02166821";
-            string unitname = "Legion Whirlwind Artillery Tank Squadron";
+              unitid = "02166821";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -610,12 +725,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionVindicatorSiegeTankSquadron_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Vindicator Siege Tank Squadron" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionVindicatorSiegeTankSquadron_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionVindicatorSiegeTankSquadron_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02166801";
-            string unitname = "Legion Vindicator Siege Tank Squadron";
+              unitid = "02166801";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -623,12 +741,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionSpartanAssaultTank_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Spartan Assault Tank" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionSpartanAssaultTank_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionSpartanAssaultTank_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02167001";
-            string unitname = "Legion Spartan Assault Tank";
+              unitid = "02167001";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -637,24 +758,30 @@ namespace _2018_Group_Project
 
 
 
-        private void LegionCaestusAssaultRam_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Caestus Assault Ram" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionCaestusAssaultRam_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionCaestusAssaultRam_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02167101";
-            string unitname = "Legion Caestus Assault Ram";
+              unitid = "02167101";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:16 unitid:7101"; 
         }
 
-        private void SicaranVenatorTankDestroyer_Click(object sender, RoutedEventArgs e){ UnitDisplay.Text = "Sicaran Venator Tank Destroyer" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void SicaranVenatorTankDestroyer_Click(object sender, RoutedEventArgs e){
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addSicaranVenatorTankDestroyer_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02167201";
-            string unitname = "Sicaran Venator Tank Destroyer";
+              unitid = "02167201";
+          
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -662,12 +789,15 @@ namespace _2018_Group_Project
 
 
 
-        private void LegionSicaranBattleTank_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Sicaran Battle Tank" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionSicaranBattleTank_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionSicaranBattleTank_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02167301";
-            string unitname = "Legion Sicaran Battle Tank";
+              unitid = "02167301";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -676,12 +806,15 @@ namespace _2018_Group_Project
 
 
 
-        private void LegionKharybdisAssaultClaw_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Kharybdis Assault Claw" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionKharybdisAssaultClaw_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionKharybdisAssaultClaw_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02167401";
-            string unitname = "Legion Kharybdis Assault Claw";
+              unitid = "02167401";
+          
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -690,12 +823,15 @@ namespace _2018_Group_Project
 
 
 
-        private void LegionWhirlwindScorpius_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Whirlwind Scorpius" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionWhirlwindScorpius_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionWhirlwindScorpius_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02168001";
-            string unitname = "Legion Whirlwind Scorpius";
+              unitid = "02168001";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -704,12 +840,15 @@ namespace _2018_Group_Project
 
 
 
-        private void LegionMalcadorAssaultTank_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Malcador Assault Tank" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionMalcadorAssaultTank_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionMalcadorAssaultTank_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02168101";
-            string unitname = "Legion Malcador Assault Tank";
+              unitid = "02168101";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -718,12 +857,15 @@ namespace _2018_Group_Project
 
 
 
-        private void LegionCerberusHeavyTankDestroyer_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Cerberus Heavy Tank Destroyer" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionCerberusHeavyTankDestroyer_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionCerberusHeavyTankDestroyer_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02178201";
-            string unitname = "Legion Cerberus Heavy Tank Destroyer";
+              unitid = "02178201";
+          
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -731,12 +873,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionTyphonHeavySiegeTank_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Typhon Heavy Siege Tank" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionTyphonHeavySiegeTank_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionTyphonHeavySiegeTank_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02178301";
-            string unitname = "Legion Typhon Heavy Siege Tank";
+              unitid = "02178301";
+         
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -744,12 +889,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionFalchionSuperHeavyTankDestroyer_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Falchion Super-Heavy Tank Destroyer" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionFalchionSuperHeavyTankDestroyer_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionFalchionSuperHeavyTankDestroyer_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02178401";
-            string unitname = "Legion Falchion Super-Heavy Tank Destroyer";
+              unitid = "02178401";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -757,24 +905,30 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionStormbladeSuperhHeayTank_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion stormblade Super-heay tank" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionStormbladeSuperhHeayTank_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionStormbladeSuperhHeayTank_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "01111601";
-            string unitname = "Legion Stormblade Super-Heavy Tank";
+              unitid = "01111601";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
             //TextBox.Text = "classid:17 unitid:8501"; 
         }
 
-        private void LegionFellbladeSuperHeavyTank_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Fellblade Super-heavy Tank" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionFellbladeSuperHeavyTank_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionFellbladeSuperHeavyTank_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02178601";
-            string unitname = "Legion Fellblade Super-heavy Tank";
+              unitid = "02178601";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -782,12 +936,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionGlaiveSuperHeavyTank_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Glaive Super-heavy Tank" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionGlaiveSuperHeavyTank_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid); 
+        }
 
         private void addLegionGlaiveSuperHeavyTank_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02178701";
-            string unitname = "Legion Glaive Super-heavy Tank";
+              unitid = "02178701";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -795,12 +952,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionThunderhawkTransporter_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Thunderhawk Transporter" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionThunderhawkTransporter_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionThunderhawkTransporter_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02178801";
-            string unitname = "Legion Thunderhawk Transporter";
+              unitid = "02178801";
+          
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -808,12 +968,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionThunderhawkGunship_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Thunderhawk Gunship" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionThunderhawkGunship_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionThunderhawkGunship_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02178901";
-            string unitname = "Legion Thunderhawk Gunship";
+              unitid = "02178901";
+        
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -821,12 +984,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionMastodonHeavyAssaultTransport_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Mastodon Heavy Assault Transport" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionMastodonHeavyAssaultTransport_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionMastodonHeavyAssaultTransport_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02179001";
-            string unitname = "Legion Mastodon Heavy Assault Transport";
+              unitid = "02179001";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -834,12 +1000,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void SokarPatternStormbird_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Sokar Pattern Stormbird" + "\n" + "Vehicle" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void SokarPatternStormbird_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addSokarPatternStormbird_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "02179201";
-            string unitname = "Sokar Pattern Stormbird";
+              unitid = "02179201";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -847,12 +1016,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionDreadnoughtTalon_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Dreadnought Talon" + "\n" + "Walker" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionDreadnoughtTalon_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionDreadnoughtTalon_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "03123301";
-            string unitname = "Legion Dreadnought Talon";
+              unitid = "03123301";
+         
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -860,12 +1032,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void ContemptorDreadnoughtTalon_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Contemptor Dreadnought Talon" + "\n" + "Walker" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void ContemptorDreadnoughtTalon_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addContemptorDreadnoughtTalon_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "03123401";
-            string unitname = "Contemptor Dreadnought Talon";
+              unitid = "03123401";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -873,12 +1048,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LegionMortisDreadnought_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Mortis Dreadnought" + "\n" + "Walker" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LegionMortisDreadnought_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLegionMortisDreadnought_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "03123601";
-            string unitname = "Legion Mortis Dreadnought";
+              unitid = "03123601";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -886,12 +1064,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void ContemptorMortisDreadnought_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Contemptor-Mortis Dreadnought" + "\n" + "Walker" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void ContemptorMortisDreadnought_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addContemptorMortisDreadnought_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "03123701";
-            string unitname = "Contemptor-Mortis Dreadnought";
+              unitid = "03123701";
+         
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -899,12 +1080,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void ContemptorCortusClassDreadnoughtTalon_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Contemptor Cortus Class Dreadnought Talon" + "\n" + "Walker" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void ContemptorCortusClassDreadnoughtTalon_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addContemptorCortusClassDreadnoughtTalon_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "03123801";
-            string unitname = "Contemptor Cortus Class Dreadnought Talon";
+              unitid = "03123801";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -912,12 +1096,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void LeviathanPatternSiegeDreadnoughtTalon_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Leviathan Pattern Siege Dreadnought Talon" + "\n" + "Walker" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void LeviathanPatternSiegeDreadnoughtTalon_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addLeviathanPatternSiegeDreadnoughtTalon_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "03167601";
-            string unitname = "Leviathan Pattern Siege Dreadnought Talon";
+              unitid = "03167601";
+      
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -925,12 +1112,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void DeredeoPatternDreadnought_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Deredeo Pattern Dreadnought" + "\n" + "Walker" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void DeredeoPatternDreadnought_Click(object sender, RoutedEventArgs e) {
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+        }
 
         private void addDeredeoPatternDreadnought_Click(object sender, RoutedEventArgs e)
         {
-            string unitid = "03167801";
-            string unitname = "Deredeo Pattern Dreadnought";
+              unitid = "03167801";
+           
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -939,9 +1129,9 @@ namespace _2018_Group_Project
 
         private void Button_Click_13(object sender, RoutedEventArgs e)
         {
-            string unitI = IndexBox.Text;
+              unitid = IndexBox.Text;
 
-            newlist.removeUnit(unitI);
+            newlist.removeUnit(unitid);
 
             TextBox.Text = "";
 

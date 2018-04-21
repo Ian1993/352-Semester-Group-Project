@@ -91,12 +91,19 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Warhammer.ldb" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="image\" />
+    <Folder Include="image\NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\BackgroundSample1.png" />
+    <Content Include="Warhammer.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

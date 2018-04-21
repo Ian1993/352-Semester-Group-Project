@@ -202,7 +202,7 @@ namespace _2018_Group_Project
             string text = part1 + System.Environment.NewLine + part2 + part4 + part3 + System.Environment.NewLine;
                     
             
-            System.IO.File.WriteAllText(@"Warhammer 40k Army List.txt", text);
+            System.IO.File.WriteAllText("Warhammer 40k Army List.txt", text);
 
 
             for (int x = 0; x < UnitCount; x++)
