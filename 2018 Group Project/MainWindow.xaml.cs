@@ -23,6 +23,8 @@ namespace _2018_Group_Project
 
         private unitManager newlist;
 
+        private string unitid;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -40,7 +42,7 @@ namespace _2018_Group_Project
             newlist.printArmy();
         }
         
-        private void Button_Click(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Praetor" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        
 
         private void makelist_Click(object sender, RoutedEventArgs e)
         { //newlist = new unitManager();
@@ -48,14 +50,22 @@ namespace _2018_Group_Project
            TextBox.Text = "";
  
         }
-        
-        
-        
+
+
+
+
+        private void Button_Click(object sender, RoutedEventArgs e) {
+
+            unitid = "01111601";
+            newlist.addUnit(unitid);
+            //UnitDisplay.Text = "Legion Praetor" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information";
+
+        }
 
         private void addLegionPraetor(object sender, RoutedEventArgs e)
         {
-            string unitid = "01111601";
-            string unitname = "Legion Praetor";
+            unitid = "01111601";
+            //string unitname = "Legion Praetor";
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -63,12 +73,15 @@ namespace _2018_Group_Project
         }
 
 
-        private void Button_Click_1(object sender, RoutedEventArgs e) { UnitDisplay.Text = "Legion Centurion" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        private void Button_Click_1(object sender, RoutedEventArgs e) {
+
+
+        }
 
         private void addLegionCenturion(object sender, RoutedEventArgs e)
         {
-            string unitid = "01111801";
-            string unitname = "Legion Centurion";
+            unitid = "01111801";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -77,13 +90,15 @@ namespace _2018_Group_Project
 
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
-        { UnitDisplay.Text = "Legion Command Squad" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        {
+
+        }
 
 
         private void addCommandSquad(object send, RoutedEventArgs e)
         {
-            string unitid = "01112601";
-            string unitname = "Legion Command Squad";
+            unitid = "01112601";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -91,13 +106,15 @@ namespace _2018_Group_Project
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
-        { UnitDisplay.Text = "Legion Veteran Tactical Squad" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        {
+
+        }
 
 
         private void addLegionVeteranTacticalSquad(object sender, RoutedEventArgs e)
         {
             string unitid = "01122801";
-            string unitname = "Legion Veteran Tactical Squad";
+            
             newlist.addUnit(unitid);
             TextBox.Text = "";
             newlist.printArmy();
@@ -106,7 +123,9 @@ namespace _2018_Group_Project
 
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
-        { UnitDisplay.Text = "Legion Destroyer Squad" + "\n" + "Infantry" + "\n" + "Statline: " + "\n" + "Other Information"; }
+        {
+
+        }
 
 
         private void addLegionDestroyerSquad(object sender, RoutedEventArgs e)

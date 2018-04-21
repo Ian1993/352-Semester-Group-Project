@@ -8,9 +8,7 @@
 
         Title="MainWindow" Height="432" Width="819">
     <Grid Margin="0,0,365,0" Opacity="0.8">
-        <Grid.Background>
-            <ImageBrush ImageSource="file:///C:/Users/jamcl/Source/Repos/352-Semester-Group-Project/2018 Group Project/image/BackgroundSample1.png"/>
-        </Grid.Background>
+        
 
 
         <TextBox x:Name="TextBox" HorizontalAlignment="Left" Height="401" Margin="446,0,-365,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" FontWeight="Bold"/>
