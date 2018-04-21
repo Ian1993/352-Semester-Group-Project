@@ -127,8 +127,8 @@ namespace _2018_Group_Project
                 {
                     query = "SELECT * FROM Infantry Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
 					dataman.accDatabase(query, ref arr1);
-					Chars[7] = '1';
-					dualID = Chars[0] + "" + Chars[1] + "" + Chars[2] + "" + Chars[3] + "" + Chars[4] + "" + Chars[5] + "" + Chars[6] + "" + Chars[7] + "";
+					//Chars[7] = '1';
+					dualID = Chars[0] + "" + Chars[1] + "" + Chars[2] + "" + Chars[3] + "" + Chars[4] + "" + Chars[5] + "" + Chars[6] + "" + '1';
 					readDB(dualID);
 
                 }
