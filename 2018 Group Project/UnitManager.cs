@@ -51,7 +51,7 @@ namespace _2018_Group_Project
         {
             var Chars = UnitID.ToCharArray();
 
-            
+			readDB(UnitID);
 
             if (Chars[1] == '1')
             {
@@ -107,7 +107,7 @@ namespace _2018_Group_Project
         {
             var Chars = UnitID.ToCharArray();
 
-
+			
         
             if (Chars[1] == '1')
             {
