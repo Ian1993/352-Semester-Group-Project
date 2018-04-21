@@ -19,7 +19,7 @@ namespace _2018_Group_Project
 {
     class FileManager
     {
-		public void accDatabase(string query, string[] data)
+		public void accDatabase(string query, ref string[] data)
 		{
 			OleDbConnection cn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\Nicholas Reid\\source\\repos\\2018 Group Project\\Warhammer.mdb");
 
