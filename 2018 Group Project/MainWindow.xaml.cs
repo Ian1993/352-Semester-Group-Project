@@ -92,7 +92,7 @@ namespace _2018_Group_Project
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            unitid = "01112601";
+            unitid = "01112602";
             newlist.readDB(unitid);
 
         }
@@ -100,7 +100,7 @@ namespace _2018_Group_Project
 
         private void addCommandSquad(object send, RoutedEventArgs e)
         {
-            unitid = "01112601";
+            unitid = "01112602";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -110,14 +110,14 @@ namespace _2018_Group_Project
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            unitid = "01122801";
+            unitid = "01122802";
             newlist.readDB(unitid);
         }
 
 
         private void addLegionVeteranTacticalSquad(object sender, RoutedEventArgs e)
         {
-            unitid = "01122801";
+            unitid = "01122802";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -128,14 +128,14 @@ namespace _2018_Group_Project
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            unitid = "01122901";
+            unitid = "01122902";
             newlist.readDB(unitid);
         }
 
 
         private void addLegionDestroyerSquad(object sender, RoutedEventArgs e)
         {
-            unitid = "01122901";
+            unitid = "01122902";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -146,7 +146,7 @@ namespace _2018_Group_Project
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            unitid = "01123001";
+            unitid = "01123002";
             newlist.readDB(unitid);
 
         }
@@ -154,7 +154,7 @@ namespace _2018_Group_Project
 
         private void addLegionTerminatorSquad(object sender, RoutedEventArgs e)
         {
-            unitid = "01123001";
+            unitid = "01123002";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -166,14 +166,14 @@ namespace _2018_Group_Project
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
 
-            unitid = "01123101";
+            unitid = "01123102";
             newlist.readDB(unitid);
         }
 
 
         private void addTechmarineCovenant(object sender, RoutedEventArgs e)
         {
-            unitid = "01123101";
+            unitid = "01123102";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -202,13 +202,13 @@ namespace _2018_Group_Project
 
 
         private void Button_Click_8(object sender, RoutedEventArgs e) {
-            unitid = "01123501";
+            unitid = "01123502";
             newlist.readDB(unitid);
         }
 
         private void addLegionRapierWeaponsBattery(object sender, RoutedEventArgs e)
         {
-            unitid = "01123501";
+            unitid = "01123502";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -234,13 +234,13 @@ namespace _2018_Group_Project
 
 
         private void Button_Click_10(object sender, RoutedEventArgs e) {
-            unitid = "01134201";
+            unitid = "01134202";
             newlist.readDB(unitid);
         }
 
         private void addLegionBreacherSiegeSquad(object sender, RoutedEventArgs e)
         {
-            unitid = "01134201";
+            unitid = "01134202";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -250,7 +250,7 @@ namespace _2018_Group_Project
 
 
         private void Button_Click_11(object sender, RoutedEventArgs e) {
-            unitid = "01134301";
+            unitid = "01134302";
             newlist.readDB(unitid);
 
 
@@ -258,7 +258,7 @@ namespace _2018_Group_Project
 
         private void addLegionTacticalSupportSquad(object sender, RoutedEventArgs e)
         {
-            unitid = "01134301";
+            unitid = "01134302";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -284,13 +284,13 @@ namespace _2018_Group_Project
 
 
         private void legonseekersquad_Click(object sender, RoutedEventArgs e) {
-            unitid = "01154801";
+            unitid = "01154802";
             newlist.readDB(unitid);
         }
 
         private void addLegionSeekerSquad(object sender, RoutedEventArgs e)
         {
-            unitid = "01154801";
+            unitid = "01154802";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -300,13 +300,13 @@ namespace _2018_Group_Project
 
 
         private void LegionOutriderSquad_Click(object sender, RoutedEventArgs e) {
-            unitid = "01154901";
+            unitid = "01154902";
             newlist.readDB(unitid);
         }
 
         private void addLegionOutriderSquad(object sender, RoutedEventArgs e)
         {
-              unitid = "01154901";
+              unitid = "01154902";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -332,13 +332,13 @@ namespace _2018_Group_Project
 
 
         private void LegionJetbikeHunterSquadron_Click(object sender, RoutedEventArgs e) {
-            unitid = "01155101";
+            unitid = "01155102";
             newlist.readDB(unitid);
         }
 
         private void addLegionJetbikeHunterSquadron_Click(object sender, RoutedEventArgs e)
         {
-              unitid = "01155101";
+              unitid = "01155102";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -364,13 +364,13 @@ namespace _2018_Group_Project
 
 
         private void Legionjetbikesky_slayersupportsquadron_Click(object sender, RoutedEventArgs e) {
-            unitid = "01166001";
+            unitid = "01166002";
             newlist.readDB(unitid);
         }
 
         private void addLegionJetbikeSkyslayerSupportSquadron(object sender, RoutedEventArgs e)
         {
-              unitid = "01166001";
+              unitid = "01166002";
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
@@ -381,13 +381,13 @@ namespace _2018_Group_Project
 
 
         private void Legionheavysupportsquad_Click(object sender, RoutedEventArgs e) {
-            unitid = "01166201";
+            unitid = "01166202";
             newlist.readDB(unitid);
         }
 
         private void addLegionHeavySupportSquad(object sender, RoutedEventArgs e)
         {
-              unitid = "01166201";
+              unitid = "01166202";
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
