@@ -8,7 +8,7 @@
 
         Title="MainWindow" Height="432" Width="819">
     <Grid Margin="0,0,365,0" Opacity="0.8" Background="Black">
-        
+
 
 
         <TextBox x:Name="TextBox" HorizontalAlignment="Left" Height="401" Margin="446,0,-365,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" FontWeight="Bold"/>
@@ -37,6 +37,7 @@
             <Button x:Name="Legionjetbikesky_slayersupportsquadron1" Content="Legion Jetbike Sky-slayer Support Squadron" HorizontalAlignment="Left" VerticalAlignment="Top" Width="249" Height="23" MouseDoubleClick="addLegionJetbikeSkyslayerSupportSquadron" Click="Legionjetbikesky_slayersupportsquadron_Click"/>
             <Button Content="Techmarine Covenant" HorizontalAlignment="Left" VerticalAlignment="Top" Width="249" MouseDoubleClick="addTechmarineCovenant" Click="Button_Click_6"/>
             <Button Content="Legion Command Squad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="249" Click="Button_Click_2" MouseDoubleClick="addCommandSquad"/>
+            <Button x:Name="LegionAssaultSquad" Content="Legion Assault Squad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="249" MouseDoubleClick="addLegionAssaultSquad_Click" Click="LegionAssaultSquad_Click"/>
         </ComboBox>
         <TextBlock HorizontalAlignment="Left" Margin="9,115,0,0" TextWrapping="Wrap" Text="Infantry" VerticalAlignment="Top"/>
         <ComboBox x:Name="Vehicles"  HorizontalAlignment="Left" Margin="96,112,0,0" VerticalAlignment="Top" Width="120">

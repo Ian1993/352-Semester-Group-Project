@@ -1157,5 +1157,19 @@ namespace _2018_Group_Project
         {
             newlist.saveArmy();
         }
+
+        private void LegionAssaultSquad_Click(object sender, RoutedEventArgs e)
+        {
+            unitid = "01134102";
+            newlist.readDB(unitid);
+        }
+        private void addLegionAssaultSquad_Click(object sender, RoutedEventArgs e)
+        {
+            unitid = "01134102";
+
+            newlist.addUnit(unitid);
+            TextBox.Text = "";
+            newlist.printArmy();
+        }
     }
 }
