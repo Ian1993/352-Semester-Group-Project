@@ -51,53 +51,75 @@ namespace _2018_Group_Project
         {
             var Chars = UnitID.ToCharArray();
 
-			
-
-            if (Chars[1] == '1')
+			if(ptval - Convert.ToInt32(arr[5]) >= 0)
             {
-                
-
-                if (Chars[7] == '1')
+                ptval = ptval - Convert.ToInt32(arr[5]);
+                if (Chars[1] == '1')
                 {
-                   
 
-                    UserList.Add(new Infantry(arr[3], arr[4], arr[5], arr[6], UnitCount));
 
-                    
+                    if (Chars[7] == '1')
+                    {
+
+
+                        UserList.Add(new Infantry(arr[3], arr[4], arr[5], arr[6], UnitCount));
+
+
+                        UnitCount++;
+                    }
+                    else if (Chars[7] == '2')
+                    {
+                        UserList.Add(new dualLine(arr1[3], arr1[4], arr[5], arr1[6], UnitCount, new Infantry(arr[3], arr[4], arr[5], arr[6], UnitCount)));
+
+
+
+
+                        UnitCount++;
+                    }
+                }
+
+                else if (Chars[1] == '2')
+                {
+                    UserList.Add(new Vehicle(arr[3], arr[4], arr[5], arr[6], UnitCount));
+
+
+
+
+
                     UnitCount++;
                 }
-                else if (Chars[7] == '2')
+
+                else if (Chars[1] == '3')
                 {
-                    UserList.Add(new dualLine(arr1[3], arr1[4], arr1[5], arr1[6], UnitCount, new Infantry(arr[3], arr[4], arr[5], arr[6], UnitCount)));
+                    UserList.Add(new Walker(arr[3], arr[4], arr[5], arr[6], UnitCount));
 
 
-                    
+
+
 
                     UnitCount++;
                 }
+
+
+
             }
 
-            else if (Chars[1] == '2')
+            else
             {
-                UserList.Add(new Vehicle(arr[3], arr[4], arr[5], arr[6], UnitCount));
+                foreach (Window window in Application.Current.Windows)
+                {
+                    if (window.GetType() == typeof(MainWindow))
+                    {
+                        (window as MainWindow).TextBox.Text = "";
+                        (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Insufficient Points" + "\n";
+                        
+                    }
+                }
 
-                
 
-               
-
-                UnitCount++;
             }
 
-            else if (Chars[1] == '3')
-            {
-                UserList.Add(new Walker(arr[3], arr[4], arr[5], arr[6], UnitCount));
-
-               
-
-                
-
-                UnitCount++;
-             }
+            
             
 
         }
@@ -167,6 +189,15 @@ namespace _2018_Group_Project
 
         public void printArmy()
         {
+            foreach (Window window in Application.Current.Windows)
+            {
+                if (window.GetType() == typeof(MainWindow))
+                {
+                    (window as MainWindow).TextBox.Text = "";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + ptval + " " + "/" + ptkeeper + "\n";
+                    
+                }
+            }
 
             for (int x = 0; x < UnitCount; x++)
             {
@@ -189,6 +220,7 @@ namespace _2018_Group_Project
         public void removeUnit(string listindex)
         {
             int x = Convert.ToInt32(listindex);
+            ptval = ptval + Convert.ToInt32(UserList[x].pointvalue);
             UserList.RemoveAt(x);
             UnitCount--;
 
@@ -235,7 +267,7 @@ namespace _2018_Group_Project
     {
         protected string name;  //name,bookindex,pointvalue,statline
 
-        protected string pointvalue;
+        public string pointvalue;
 
         protected string bookindex;
 
