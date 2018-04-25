@@ -21,7 +21,7 @@ namespace _2018_Group_Project
     public partial class MainWindow : Window
     {
 
-        private unitManager newlist;
+        private unitManager newlist = null;
 
         private string unitid;
 
@@ -1146,17 +1146,57 @@ namespace _2018_Group_Project
 
         private void _2500Picker_Click(object sender, RoutedEventArgs e)
         {
-            newlist = new unitManager(2500); TextBox.Text = "New list made";
+            if(newlist == null)
+            {
+
+                newlist = new unitManager(2500); TextBox.Text = "New list made";
+
+            }
+            //newlist = new unitManager(2500); TextBox.Text = "New list made";
+            else
+            {
+
+                TextBox.Text = "";
+
+                TextBox.Text = "List already Created";
+            }
         }
 
         private void _1500Picker_Click(object sender, RoutedEventArgs e)
         {
-            newlist = new unitManager(1500); TextBox.Text = "New list made";
+            if (newlist == null)
+            {
+
+                newlist = new unitManager(1500); TextBox.Text = "New list made";
+
+            }
+            //newlist = new unitManager(2500); TextBox.Text = "New list made";
+            else
+            {
+
+                TextBox.Text = "";
+
+                TextBox.Text = "List already Created";
+            }
         }
 
         private void CustomPointConfirm_Click(object sender, RoutedEventArgs e)
         {
-            newlist = new unitManager( Convert.ToInt32(PointBox.Text)); TextBox.Text = "New list made";
+            if (newlist == null)
+            {
+
+                newlist = new unitManager(Convert.ToInt32(PointBox.Text)); TextBox.Text = "New list made";
+
+            }
+            //newlist = new unitManager(2500); TextBox.Text = "New list made";
+            else
+            {
+
+                TextBox.Text = "";
+
+                TextBox.Text = "List already Created";
+            }
+            
         }
 
         private void FuturehomeofsaveList_Click(object sender, RoutedEventArgs e)
