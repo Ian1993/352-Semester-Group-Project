@@ -68,7 +68,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:11 unitid:1601";
         }
 
@@ -85,7 +85,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:11 unitid:1801";
         }
 
@@ -104,7 +104,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:11 unitid:2601 and 2602";
         }
 
@@ -121,7 +121,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:12 unitid:2801 and 2802";
         }
 
@@ -139,7 +139,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:12 unitid:2901 and 2902"; 
         }
 
@@ -158,7 +158,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:12 unitid:3001 and 3002";
         }
 
@@ -177,7 +177,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:12 unitid:3101 and 3102";
         }
 
@@ -196,7 +196,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:12 unitid:3201"; 
         }
 
@@ -212,7 +212,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:12 unitid:3501 and 3502";
         }
 
@@ -228,7 +228,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:13 unitid:4001, 4002, 4101, 4102";
         }
 
@@ -244,7 +244,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:13 unitid:4201, 4202";
         }
 
@@ -262,7 +262,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:13 unitid:4301, 4302";
         }
 
@@ -278,7 +278,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:13 unitid:4401"; 
         }
 
@@ -294,7 +294,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid 15, unitid: 4801, 4802"; 
         }
 
@@ -310,7 +310,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:15, unitid:4901, 4902";
         }
 
@@ -326,7 +326,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:15 unitid: 5001";
         }
 
@@ -342,7 +342,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:15 unitid: 5101, 5102";
         }
 
@@ -358,7 +358,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:15 unitid:5401, ";
         }
 
@@ -374,7 +374,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:6001, 6002"; 
         }
 
@@ -391,7 +391,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:6201 6202";
         }
 
@@ -407,7 +407,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:11 unitid:2501";
         }
 
@@ -423,7 +423,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:4501"; 
         }
 
@@ -439,7 +439,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:14 unitid:4601";
         }
 
@@ -455,7 +455,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:14 unitid:4701";
         }
 
@@ -471,7 +471,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:15 unitid:5201";
         }
 
@@ -487,7 +487,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:15 unitid:5501";
         }
 
@@ -503,7 +503,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:15 unitid:5601";
         }
 
@@ -520,7 +520,7 @@ namespace _2018_Group_Project
          
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:15 unitid:5701";
         }
 
@@ -537,7 +537,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:15 unitid:5801"; 
         }
 
@@ -554,7 +554,7 @@ namespace _2018_Group_Project
           
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:15 unitid:5901";
         }
 
@@ -571,7 +571,7 @@ namespace _2018_Group_Project
           
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:9001";
         }
 
@@ -588,7 +588,7 @@ namespace _2018_Group_Project
           
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:6301";
         }
 
@@ -604,7 +604,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:6401";
         }
 
@@ -621,7 +621,7 @@ namespace _2018_Group_Project
         
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:6411";
         }
 
@@ -637,7 +637,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:6421";
         }
 
@@ -654,7 +654,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "class id16 unitid:6601";
         }
 
@@ -670,7 +670,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:6701";
         }
 
@@ -686,7 +686,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid6801";
         }
 
@@ -703,7 +703,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:6811";
         }
 
@@ -720,7 +720,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:6821";
         }
 
@@ -736,7 +736,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:6901";
         }
 
@@ -752,7 +752,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:7001"; 
         }
 
@@ -769,7 +769,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:7101"; 
         }
 
@@ -784,7 +784,7 @@ namespace _2018_Group_Project
           
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
         }
 
 
@@ -800,7 +800,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:7301";
         }
 
@@ -817,7 +817,7 @@ namespace _2018_Group_Project
           
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:7401";
         }
 
@@ -834,7 +834,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:8001"; 
         }
 
@@ -851,7 +851,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid:8101";
         }
 
@@ -868,7 +868,7 @@ namespace _2018_Group_Project
           
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:17 unitid:8201";
         }
 
@@ -884,7 +884,7 @@ namespace _2018_Group_Project
          
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:17 unitid:8301";
         }
 
@@ -900,7 +900,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:17 unitid:8401";
         }
 
@@ -916,7 +916,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:17 unitid:8501"; 
         }
 
@@ -931,7 +931,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:17 unitid:8601";
         }
 
@@ -947,7 +947,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:17 unitid:8701";
         }
 
@@ -963,7 +963,7 @@ namespace _2018_Group_Project
           
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:17 unitid:8801";
         }
 
@@ -979,7 +979,7 @@ namespace _2018_Group_Project
         
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:17 unitid:8901";
         }
 
@@ -995,7 +995,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:17 unitid:9001";
         }
 
@@ -1011,7 +1011,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "clasid:17 unitid:9201";
         }
 
@@ -1027,7 +1027,7 @@ namespace _2018_Group_Project
          
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:12 unitid:3301"; 
         }
 
@@ -1043,7 +1043,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:12 unitid:3401";
         }
 
@@ -1059,7 +1059,7 @@ namespace _2018_Group_Project
             
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:12 unitid:3601"; 
         }
 
@@ -1075,7 +1075,7 @@ namespace _2018_Group_Project
          
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:12 unitid:3701";
         }
 
@@ -1091,7 +1091,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid12 unitid:3801";
         }
 
@@ -1107,7 +1107,7 @@ namespace _2018_Group_Project
       
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:16 unitid7601";
         }
 
@@ -1123,7 +1123,7 @@ namespace _2018_Group_Project
            
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
             //TextBox.Text = "classid:? unitid:3301"; 
         }
 
@@ -1169,7 +1169,7 @@ namespace _2018_Group_Project
 
             newlist.addUnit(unitid);
             TextBox.Text = "";
-            newlist.printArmy();
+            
         }
     }
 }
