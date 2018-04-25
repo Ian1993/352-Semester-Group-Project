@@ -67,7 +67,7 @@ namespace _2018_Group_Project
             unitid = "01111601";
             
             newlist.addUnit(unitid);
-            TextBox.Text = "";
+            //TextBox.Text = "";
             
             //TextBox.Text = "classid:11 unitid:1601";
         }
@@ -84,7 +84,7 @@ namespace _2018_Group_Project
             unitid = "01111801";
             
             newlist.addUnit(unitid);
-            TextBox.Text = "";
+            //TextBox.Text = "";
             
             //TextBox.Text = "classid:11 unitid:1801";
         }

@@ -66,6 +66,8 @@ namespace _2018_Group_Project
 
 
                         UnitCount++;
+
+                        printArmy();
                     }
                     else if (Chars[7] == '2')
                     {
@@ -75,6 +77,8 @@ namespace _2018_Group_Project
 
 
                         UnitCount++;
+
+                        printArmy();
                     }
                 }
 
@@ -87,6 +91,8 @@ namespace _2018_Group_Project
 
 
                     UnitCount++;
+
+                    printArmy();
                 }
 
                 else if (Chars[1] == '3')
@@ -98,6 +104,8 @@ namespace _2018_Group_Project
 
 
                     UnitCount++;
+
+                    printArmy();
                 }
 
 
