@@ -35,15 +35,17 @@ namespace _2018_Group_Project
         private void savelist_Click(object sender, RoutedEventArgs e)
         {
             newlist.saveArmy();
+            // calls saveArmy from unitManager()
         }
         private void printarmy_Click(object sender, RoutedEventArgs e)
         {
             TextBox.Text = "";
             newlist.printArmy();
+            // clears the textbox and then reprints army.
         }
         
         
-
+        
         private void makelist_Click(object sender, RoutedEventArgs e)
         { //newlist = new unitManager();
            UnitDisplay.Text = "New list made";
@@ -53,7 +55,11 @@ namespace _2018_Group_Project
 
 
 
-
+        /*
+         * to save on a lot of time typing and reading, all of the unit buttons have the same functionality
+         * on the single click, the newlist textbox displays the units information and on the double click
+         * it adds the unit to the list and then prints the unit list.
+         */
         private void Button_Click(object sender, RoutedEventArgs e) {
 
             unitid = "01111601";
