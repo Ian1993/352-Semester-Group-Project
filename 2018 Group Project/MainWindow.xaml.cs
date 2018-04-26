@@ -20,6 +20,23 @@ namespace _2018_Group_Project
     /// </summary>
     public partial class MainWindow : Window
     {
+        [System.STAThreadAttribute()]
+        [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
+        public static void Main()
+        {
+
+
+            string lineone = "To start, select a point value (if you wish you may create your own value), this limits the amount of units each army can contain next single click on the buttons to display their information on the above textbox To add a unit to the list, double click on the unit of your choice(Your list will be displayed on the textbox to the right) to delete a unit, type the index into the textbox next to the Remove unit button once you have finished, you may hit print army for your army to be saved in a text file";
+            string caption = "simple instructions";
+            MessageBoxButton button = MessageBoxButton.OK;
+            MessageBox.Show(lineone, caption, button);
+            _2018_Group_Project.App app = new _2018_Group_Project.App();
+            app.InitializeComponent();
+            app.Run();
+            
+
+        }
 
         private unitManager newlist = null;
 
@@ -56,9 +73,9 @@ namespace _2018_Group_Project
 
 
         /*
-         * to save on a lot of time typing and reading, all of the unit buttons have the same functionality
-         * on the single click, the newlist textbox displays the units information and on the double click
-         * it adds the unit to the list and then prints the unit list.
+         * to save on a lot of time typing and reading, all of the unit buttons have the same functionality.
+         * On the single click, the newlist textbox displays the units information and on the double click
+         * it adds the unit to the list and then prints the unit list on the textbox.
          */
         private void Button_Click(object sender, RoutedEventArgs e) {
 
@@ -1133,6 +1150,20 @@ namespace _2018_Group_Project
             //TextBox.Text = "classid:? unitid:3301"; 
         }
 
+        private void LegionAssaultSquad_Click(object sender, RoutedEventArgs e)
+        {
+            unitid = "01134102";
+            newlist.readDB(unitid);
+        }
+        private void addLegionAssaultSquad_Click(object sender, RoutedEventArgs e)
+        {
+            unitid = "01134102";
+
+            newlist.addUnit(unitid);
+            TextBox.Text = "";
+
+        }
+
         private void Button_Click_13(object sender, RoutedEventArgs e)
         {
               unitid = IndexBox.Text;
@@ -1204,18 +1235,6 @@ namespace _2018_Group_Project
             newlist.saveArmy();
         }
 
-        private void LegionAssaultSquad_Click(object sender, RoutedEventArgs e)
-        {
-            unitid = "01134102";
-            newlist.readDB(unitid);
-        }
-        private void addLegionAssaultSquad_Click(object sender, RoutedEventArgs e)
-        {
-            unitid = "01134102";
 
-            newlist.addUnit(unitid);
-            TextBox.Text = "";
-            
-        }
     }
 }
