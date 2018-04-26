@@ -161,7 +161,7 @@ namespace _2018_Group_Project
                             (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + "Page Number: " + arr[4] + " " + "Point Value" + arr[5] + "\n";
 
                             //var Chars1 = arr[6].ToCharArray();
-                            (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + "Statline" + arr[6] + "\n";
+                            (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + "Statline: " + arr[6] + "\n";
                         }
                     }
 
@@ -367,7 +367,7 @@ namespace _2018_Group_Project
                 if (window.GetType() == typeof(MainWindow))
                 {
                     (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text +"Index: " + unitIndex + " " + "Unit Name " + name + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + " " + "Stats: " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + "\n" + "Stats: " + statline + "\n";
                     (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value " + pointvalue + "\n" + System.Environment.NewLine;
                 }
             }
@@ -417,7 +417,7 @@ namespace _2018_Group_Project
                 if (window.GetType() == typeof(MainWindow))
                 {
                     (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Index: " + unitIndex + " " + "Unit Name " + name + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + " " + "Stats: " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + "\n" + "Stats: " + statline + "\n";
                     (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value " + pointvalue + "\n" + System.Environment.NewLine;
                 }
             }
@@ -464,7 +464,7 @@ namespace _2018_Group_Project
                 if (window.GetType() == typeof(MainWindow))
                 {
                     (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Index: " + unitIndex + " " + "Unit Name " + name + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + " " + "Stats: " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + "\n" + "Stats: " + statline + "\n";
                     (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value " + pointvalue + "\n" + System.Environment.NewLine;
                 }
             }
@@ -523,7 +523,7 @@ namespace _2018_Group_Project
                 if (window.GetType() == typeof(MainWindow))
                 {
                     (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Index: " + unitIndex + " " + "Unit Name " + name + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + " " + "Stats: " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + "\n" + "Stats: " + statline + "\n";
                     (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value " + pointvalue + "\n" + System.Environment.NewLine;
                 }
             }

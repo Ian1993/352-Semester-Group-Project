@@ -11,12 +11,12 @@
 
 
 
-        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Height="401" Margin="446,0,-365,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" FontWeight="Bold"/>
+        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Height="401" Margin="446,0,-365,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" FontWeight="Bold" VerticalScrollBarVisibility="Visible"/>
 
 
 
 
-        <ComboBox x:Name="Infantry" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91"  Height="22" Margin="0,112,0,0" >
+        <ComboBox x:Name="Infantry" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91"  Height="22" Margin="9,112,0,0" >
             <Button Content="Legion Centurion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="249" Click="Button_Click_1" MouseDoubleClick="addLegionCenturion"/>
             <Button Content="Legion Veteran Tactical Squad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="249" MouseDoubleClick="addLegionVeteranTacticalSquad" Click="Button_Click_3"/>
             <Button Content="Legion Destroyer Squad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="249" MouseDoubleClick="addLegionDestroyerSquad" Click="Button_Click_4"/>
@@ -39,8 +39,8 @@
             <Button Content="Legion Command Squad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="249" Click="Button_Click_2" MouseDoubleClick="addCommandSquad"/>
             <Button x:Name="LegionAssaultSquad" Content="Legion Assault Squad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="249" MouseDoubleClick="addLegionAssaultSquad_Click" Click="LegionAssaultSquad_Click"/>
         </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="9,115,0,0" TextWrapping="Wrap" Text="Infantry" VerticalAlignment="Top"/>
-        <ComboBox x:Name="Vehicles"  HorizontalAlignment="Left" Margin="96,112,0,0" VerticalAlignment="Top" Width="120">
+        <TextBlock HorizontalAlignment="Left" Margin="22,115,0,0" TextWrapping="Wrap" Text="Infantry" VerticalAlignment="Top" RenderTransformOrigin="1.122,0.5"/>
+        <ComboBox x:Name="Vehicles"  HorizontalAlignment="Left" Margin="106,112,0,0" VerticalAlignment="Top" Width="120">
             <Button x:Name="damoclescommandrhino" Content="Damocles Command Rhino" HorizontalAlignment="Left" VerticalAlignment="Top" Width="245" Click="DamoclesCommandRhino_Click" MouseDoubleClick="addDamoclesCommandRhino"/>
             <Button x:Name="LegionRhinoArmouredCarrier" Content="Legion Rhino Armoured Carrier" HorizontalAlignment="Left" VerticalAlignment="Top" Width="245" Click="LegionRhinoArmouredCarrier__Click" MouseDoubleClick="addLegionRhinoArmouredCarrier"/>
             <Button x:Name="LegionDropPod" Content="Legion Drop Pod" HorizontalAlignment="Left" VerticalAlignment="Top" Width="245" Click="LegionDropPod_Click" MouseDoubleClick="addLegionDropPod"/>
@@ -80,7 +80,7 @@
             <Button x:Name="SokarPatternStormbird" Content="Sokar Pattern Stormbird" HorizontalAlignment="Left" VerticalAlignment="Top" Width="245" Click="SokarPatternStormbird_Click" MouseDoubleClick="addSokarPatternStormbird_Click"/>
             <Button x:Name="SicaranVenatorTankDestroyer" Content="Sicaran Venator Tank Destroyer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="245" Click="SicaranVenatorTankDestroyer_Click" MouseDoubleClick="addSicaranVenatorTankDestroyer_Click"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Margin="221,112,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox HorizontalAlignment="Left" Margin="231,112,0,0" VerticalAlignment="Top" Width="120">
             <Button x:Name="LegionDreadnoughtTalon" Content="Legion Dreadnought Talon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="256" Click="LegionDreadnoughtTalon_Click" MouseDoubleClick="addLegionDreadnoughtTalon_Click"/>
             <Button x:Name="ContemptorDreadnoughtTalon" Content="Contemptor Dreadnought Talon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="256" Click="ContemptorDreadnoughtTalon_Click" MouseDoubleClick="addContemptorDreadnoughtTalon_Click"/>
             <Button x:Name="LegionMortisDreadnought" Content="Legion Mortis Dreadnought" HorizontalAlignment="Left" VerticalAlignment="Top" Width="256" Click="LegionMortisDreadnought_Click" MouseDoubleClick="addLegionMortisDreadnought_Click"/>
@@ -89,19 +89,19 @@
             <Button x:Name="LeviathanPatternSiegeDreadnoughtTalon" Content="Leviathan Pattern Siege Dreadnought Talon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="256" Click="LeviathanPatternSiegeDreadnoughtTalon_Click" MouseDoubleClick="addLeviathanPatternSiegeDreadnoughtTalon_Click"/>
             <Button x:Name="DeredeoPatternDreadnought" Content="Deredeo Pattern Dreadnought" HorizontalAlignment="Left" VerticalAlignment="Top" Width="256" Click="DeredeoPatternDreadnought_Click" MouseDoubleClick="addDeredeoPatternDreadnought_Click"/>
         </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="106,115,0,0" TextWrapping="Wrap" Text="Vehicles" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="230,115,0,0" TextWrapping="Wrap" Text="Walkers" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="124,115,0,0" TextWrapping="Wrap" Text="Vehicles" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="248,115,0,0" TextWrapping="Wrap" Text="Walkers" VerticalAlignment="Top"/>
 
         <Button x:Name="FuturehomeofsaveList" Content="Save List" HorizontalAlignment="Left" Margin="341,346,0,0" VerticalAlignment="Top" Width="91" MouseDoubleClick="savelist_Click"/>
         <Button x:Name="printarmy" Content="Print army" HorizontalAlignment="Left" Margin="357,371,0,0" VerticalAlignment="Top" Width="75" Click="printarmy_Click"/>
-        <Label x:Name="Program_Name" Content="Warhammer 40k: Armies in the Age of Darkness Army Builder v1.0" HorizontalAlignment="Left" Margin="9,300,-14,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="White" Width="447" FontFamily="Times New Roman" FontSize="14"/>
+        <Label x:Name="Program_Name" Content="Warhammer 40k: Age of Darkness Army Builder v1.0" HorizontalAlignment="Left" Margin="9,300,-14,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="White" Width="447" FontFamily="Times New Roman" FontSize="14"/>
         <Label x:Name="Author_Label" Content="Created By: Ian Nevills, James Laubach, Nicholas Ried" HorizontalAlignment="Left" Margin="11,326,0,0" VerticalAlignment="Top" Background="#00000000" Foreground="White" FontFamily="Times New Roman"/>
         <Label x:Name="Trademark_Label" Content="Not associated with Games Workshop, all trademarks belong to Games Workshop" HorizontalAlignment="Left" Margin="11,350,0,0" VerticalAlignment="Top" FontSize="9" FontFamily="Times New Roman" Foreground="White"/>
         <TextBox x:Name="IndexBox" HorizontalAlignment="Left" Height="23" Margin="302,262,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="49"/>
         <Button Content="Remove Unit" HorizontalAlignment="Left" Margin="357,262,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_13"/>
         <TextBlock x:Name="Remove_Label" HorizontalAlignment="Left" Margin="302,241,0,0" TextWrapping="Wrap" Text="Enter a Unit Index" VerticalAlignment="Top" Foreground="White" FontFamily="Times New Roman"/>
         <TextBlock x:Name="Instruction_Label" HorizontalAlignment="Left" Margin="11,10,0,0" TextWrapping="Wrap" Text="Single click to display unit information, double click to add to list" VerticalAlignment="Top" RenderTransformOrigin="-4.347,0.25" Foreground="White" FontFamily="Times New Roman"/>
-        <TextBox x:Name="UnitDisplay" HorizontalAlignment="Left" Height="80" Margin="9,27,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="UnitDisplay" HorizontalAlignment="Left" Height="80" Margin="9,27,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="342"/>
         <Button x:Name="_2500Picker" Content="2500" HorizontalAlignment="Left" Margin="11,172,0,0" VerticalAlignment="Top" Width="75" Click="_2500Picker_Click"/>
         <Button x:Name="_1500Picker" Content="1500" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top" Width="75" Click="_1500Picker_Click"/>
         <TextBox x:Name="PointBox" HorizontalAlignment="Left" Height="23" Margin="11,227,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="75"/>

@@ -25,10 +25,10 @@ namespace _2018_Group_Project
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
         public static void Main()
         {
+             
 
-
-            string lineone = "To start, select a point value (if you wish you may create your own value), this limits the amount of units each army can contain. Next single click on the buttons to display their information in the above textbox. To add a unit to the list, double click on the unit of your choice(Your list will be displayed on the textbox to the right). To delete a unit, type the index into the textbox next to the Remove unit button. Once you have finished, you may hit print army for your army to be saved in a text file";
-            string caption = "simple instructions";
+            string lineone = "This Program is not intended as a substitute for the Legiones Astartes: Age of Darkness book nor the Warhammer 40k 7th edition core rules" + "\n" + "Please support the official release" + "\n" + "\n" + "\n" + "1: Select your point total for your list (1500 or 2500 or Input your own)" + "\n" + "\n" + "2: One click on a unit button under the dropdown menus will display the unit's information, a second click will add that unit to the list" + "\n" + "\n" + "3: You can remove a unit from your list by entering the index number to the left of the unit's name into the box next to remove unit" + "\n" + "\n" + "4: You can save your list to the folder with the .exe by pressing SAVE LIST";
+            string caption = "Warhammer 40k Army Builder Quick Start Guide";
             MessageBoxButton button = MessageBoxButton.OK;
             MessageBox.Show(lineone, caption, button);
             _2018_Group_Project.App app = new _2018_Group_Project.App();
