@@ -39,7 +39,7 @@ namespace _2018_Group_Project
 
             //List<unit> temp = new List<unit>();
             UserList = new List<unit>();
-            ptval = pts;
+            ptval = 0;
             ptkeeper = pts;
             dataman = new FileManager();
             
@@ -51,9 +51,9 @@ namespace _2018_Group_Project
         {
             var Chars = UnitID.ToCharArray();
 
-			if(ptval - Convert.ToInt32(arr[5]) >= 0)
+			if(ptval + Convert.ToInt32(arr[5]) <= ptkeeper)
             {
-                ptval = ptval - Convert.ToInt32(arr[5]);
+                ptval = ptval + Convert.ToInt32(arr[5]);
                 if (Chars[1] == '1')
                 {
 
@@ -66,6 +66,8 @@ namespace _2018_Group_Project
 
 
                         UnitCount++;
+
+                        printArmy();
                     }
                     else if (Chars[7] == '2')
                     {
@@ -75,6 +77,8 @@ namespace _2018_Group_Project
 
 
                         UnitCount++;
+
+                        printArmy();
                     }
                 }
 
@@ -87,6 +91,8 @@ namespace _2018_Group_Project
 
 
                     UnitCount++;
+
+                    printArmy();
                 }
 
                 else if (Chars[1] == '3')
@@ -98,6 +104,8 @@ namespace _2018_Group_Project
 
 
                     UnitCount++;
+
+                    printArmy();
                 }
 
 
@@ -112,15 +120,15 @@ namespace _2018_Group_Project
                     {
                         (window as MainWindow).TextBox.Text = "";
                         (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Insufficient Points" + "\n";
-                        
+
                     }
                 }
 
 
             }
 
-            
-            
+
+
 
         }
 
@@ -143,6 +151,20 @@ namespace _2018_Group_Project
 
                     dataman.accDatabase(query, ref arr);
 
+                    foreach (Window window in Application.Current.Windows)
+                    {
+                        if (window.GetType() == typeof(MainWindow))
+                        {
+                            (window as MainWindow).UnitDisplay.Text = " ";
+                            (window as MainWindow).UnitDisplay.Text = "Infantry Display Main Line ONLY!" + "\n";
+                            (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + "Unit Name: " + arr[3] + "\n";
+                            (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + "Page Number: " + arr[4] + " " + "Point Value" + arr[5] + "\n";
+
+                            //var Chars1 = arr[6].ToCharArray();
+                            (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + "Statline" + arr[6] + "\n";
+                        }
+                    }
+
 
                 }
                 else if (Chars[7] == '2')
@@ -154,12 +176,28 @@ namespace _2018_Group_Project
 					readDB(dualID);
 
                 }
+
+                
             }
 
             else if (Chars[1] == '2')
             {
                 query = "SELECT * FROM Vehicles Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
                 dataman.accDatabase(query, ref arr);
+
+                foreach (Window window in Application.Current.Windows)
+                {
+                    if (window.GetType() == typeof(MainWindow))
+                    {
+                        (window as MainWindow).UnitDisplay.Text = " ";
+                        
+                        (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + "Unit Name: " + arr[3] + "\n";
+                        (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + "Page Number: " + arr[4] + " " + "Point Value" + arr[5] + "\n";
+
+                        //var Chars1 = arr[6].ToCharArray();
+                        (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + "Statline" + arr[6] + "\n";
+                    }
+                }
 
             }
 
@@ -169,20 +207,25 @@ namespace _2018_Group_Project
                 query = "SELECT * FROM Walkers Where UnitID = " + "'" + Chars[4] + Chars[5] + Chars[6] + Chars[7] + "'";
 
                 dataman.accDatabase(query, ref arr);
+
+                foreach (Window window in Application.Current.Windows)
+                {
+                    if (window.GetType() == typeof(MainWindow))
+                    {
+                        (window as MainWindow).UnitDisplay.Text = " ";
+                        
+                        (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + "Unit Name: " + arr[3] + "\n";
+                        (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + "Page Number: " + arr[4] + " " + "Point Value" + arr[5] + "\n";
+
+                        //var Chars1 = arr[6].ToCharArray();
+                        (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + "Statline" + arr[6] + "\n";
+                    }
+                }
             }
 
             //dataman.accDatabase(query, ref arr);
 
-            foreach (Window window in Application.Current.Windows)
-            {
-                if (window.GetType() == typeof(MainWindow))
-                {
-                    (window as MainWindow).UnitDisplay.Text = " ";
-                    (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + arr[3] + "\n";
-                    (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + arr[4] + " " + arr[5] + "\n";
-                    (window as MainWindow).UnitDisplay.Text = (window as MainWindow).UnitDisplay.Text + arr[6] + "\n";
-                }
-            }
+            
 
 
         }
@@ -205,7 +248,7 @@ namespace _2018_Group_Project
 				UserList[x].print();
 				
             }
-
+              
         }
 
         public void printUnit(string listindex)
@@ -237,9 +280,9 @@ namespace _2018_Group_Project
             string part1 = "Your Army List for 7th Edition The Horus Heresy";
             string part2 = "Made on the date: ";
             string part3 = "Your List is made up of: " + UnitCount + " units, for a total of: " + ptval + " points" ;
-            string part4 = dateOnly.ToString("d");
+            string part4 = dateOnly.ToString("d") + " ";
 
-            string text = part1 + System.Environment.NewLine + part2 + part4 + part3 + System.Environment.NewLine;
+            string text = part1 + System.Environment.NewLine + part2 + part4 + part3 + System.Environment.NewLine + System.Environment.NewLine;
                     
             
             System.IO.File.WriteAllText("Warhammer 40k Army List.txt", text);
@@ -273,7 +316,7 @@ namespace _2018_Group_Project
 
         protected string statline;
 
-        protected string unitID;
+        //protected string unitID;
 
         protected int unitIndex;
 
@@ -290,7 +333,7 @@ namespace _2018_Group_Project
 
         public abstract void save();
 
-        public abstract void ReadIn(string name, string statline, int unitID, int unitIndex);
+        
 
         public abstract void IndexUpdate(int x);
 
@@ -323,9 +366,9 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + unitIndex + " " + name + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + bookindex + " " + statline + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + pointvalue + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text +"Index: " + unitIndex + " " + "Unit Name " + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + " " + "Stats: " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value " + pointvalue + "\n" + System.Environment.NewLine;
                 }
             }
 
@@ -339,14 +382,11 @@ namespace _2018_Group_Project
             using (System.IO.StreamWriter file =
                new System.IO.StreamWriter("Warhammer 40k Army List.txt", true))
             {
-                file.WriteLine(unitIndex + " " + name);
+                file.WriteLine("Unit Name: " + name + System.Environment.NewLine + "Statline: " + statline + System.Environment.NewLine + "Page Number: " + unitIndex + System.Environment.NewLine + "Point Value: " + pointvalue + System.Environment.NewLine + System.Environment.NewLine);
             }
         }
 
-        public override void ReadIn(string name, string statline, int unitID, int unitIndex)
-        {
-
-        }
+        
 
         public override void IndexUpdate(int x)
         {
@@ -376,9 +416,9 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + unitIndex + " " + name + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + bookindex + " " + statline + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + pointvalue + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Index: " + unitIndex + " " + "Unit Name " + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + " " + "Stats: " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value " + pointvalue + "\n" + System.Environment.NewLine;
                 }
             }
         }
@@ -388,14 +428,11 @@ namespace _2018_Group_Project
             using (System.IO.StreamWriter file =
                new System.IO.StreamWriter("Warhammer 40k Army List.txt", true))
             {
-                file.WriteLine(unitIndex + " " + name );
+                file.WriteLine("Unit Name: " + name + System.Environment.NewLine + "Statline: " + statline + System.Environment.NewLine + "Page Number: " + unitIndex + System.Environment.NewLine + "Point Value: " + pointvalue + System.Environment.NewLine + System.Environment.NewLine);
             }
         }
 
-        public override void ReadIn(string name, string statline, int unitID, int unitIndex)
-        {
-
-        }
+       
 
         public override void IndexUpdate(int x)
         {
@@ -426,9 +463,9 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + unitIndex + " " + name + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + bookindex + " " + statline + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + pointvalue + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Index: " + unitIndex + " " + "Unit Name " + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + " " + "Stats: " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value " + pointvalue + "\n" + System.Environment.NewLine;
                 }
             }
         }
@@ -438,14 +475,11 @@ namespace _2018_Group_Project
             using (System.IO.StreamWriter file =
                new System.IO.StreamWriter("Warhammer 40k Army List.txt", true))
             {
-                file.WriteLine(unitIndex + " " + name);
+                file.WriteLine("Unit Name: " + name + System.Environment.NewLine + "Statline: " + statline + System.Environment.NewLine + "Page Number: " + unitIndex + System.Environment.NewLine + "Point Value: " + pointvalue + System.Environment.NewLine + System.Environment.NewLine);
             }
         }
 
-        public override void ReadIn(string name, string statline, int unitID, int unitIndex)
-        {
-            
-        }
+        
 
         public override void IndexUpdate(int x)
         {
@@ -473,10 +507,7 @@ namespace _2018_Group_Project
             Store = user;
         }
 
-        public override void ReadIn(string name, string statline, int unitID, int unitIndex)
-        {
-
-        }
+       
 
         public override void IndexUpdate(int x)
         {
@@ -491,9 +522,9 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + unitIndex + " " + name + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + bookindex + " " + statline + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + pointvalue + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Index: " + unitIndex + " " + "Unit Name " + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + " " + "Stats: " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value " + pointvalue + "\n" + System.Environment.NewLine;
                 }
             }
         }
@@ -504,7 +535,7 @@ namespace _2018_Group_Project
             using (System.IO.StreamWriter file =
                new System.IO.StreamWriter("Warhammer 40k Army List.txt", true))
             {
-                file.WriteLine( name);
+                file.WriteLine("Unit Name: " + name + System.Environment.NewLine + "Statline: " + statline + System.Environment.NewLine + "Page Number: " + unitIndex + System.Environment.NewLine + "Point Value: " + pointvalue + System.Environment.NewLine + System.Environment.NewLine);
             }
         }
 
