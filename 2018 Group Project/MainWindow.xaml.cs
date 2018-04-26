@@ -27,7 +27,7 @@ namespace _2018_Group_Project
         {
 
 
-            string lineone = "To start, select a point value (if you wish you may create your own value), this limits the amount of units each army can contain next single click on the buttons to display their information on the above textbox To add a unit to the list, double click on the unit of your choice(Your list will be displayed on the textbox to the right) to delete a unit, type the index into the textbox next to the Remove unit button once you have finished, you may hit print army for your army to be saved in a text file";
+            string lineone = "To start, select a point value (if you wish you may create your own value), this limits the amount of units each army can contain. Next single click on the buttons to display their information in the above textbox. To add a unit to the list, double click on the unit of your choice(Your list will be displayed on the textbox to the right). To delete a unit, type the index into the textbox next to the Remove unit button. Once you have finished, you may hit print army for your army to be saved in a text file";
             string caption = "simple instructions";
             MessageBoxButton button = MessageBoxButton.OK;
             MessageBox.Show(lineone, caption, button);
@@ -1173,6 +1173,7 @@ namespace _2018_Group_Project
             TextBox.Text = "";
 
             newlist.printArmy();
+            // removes the unit at the typed in index
         }
 
         private void _2500Picker_Click(object sender, RoutedEventArgs e)
@@ -1181,9 +1182,9 @@ namespace _2018_Group_Project
             {
 
                 newlist = new unitManager(2500); TextBox.Text = "New list made";
-
+                //creates unitManager with a point value of 2500
             }
-            //newlist = new unitManager(2500); TextBox.Text = "New list made";
+            
             else
             {
 
@@ -1199,9 +1200,9 @@ namespace _2018_Group_Project
             {
 
                 newlist = new unitManager(1500); TextBox.Text = "New list made";
-
+                //creates newlist with a point value of 1500
             }
-            //newlist = new unitManager(2500); TextBox.Text = "New list made";
+            
             else
             {
 
@@ -1217,9 +1218,9 @@ namespace _2018_Group_Project
             {
 
                 newlist = new unitManager(Convert.ToInt32(PointBox.Text)); TextBox.Text = "New list made";
-
+                // starts unit manager with a point value of the users choosing
             }
-            //newlist = new unitManager(2500); TextBox.Text = "New list made";
+            
             else
             {
 
@@ -1233,6 +1234,7 @@ namespace _2018_Group_Project
         private void FuturehomeofsaveList_Click(object sender, RoutedEventArgs e)
         {
             newlist.saveArmy();
+            // saves the army list to a textfile
         }
 
 
