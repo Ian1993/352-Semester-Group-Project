@@ -276,13 +276,13 @@ namespace _2018_Group_Project
         public void saveArmy()
         {
 
-            DateTime dateOnly = new DateTime();
+           
             string part1 = "Your Army List for 7th Edition The Horus Heresy";
-            string part2 = "Made on the date: ";
+            
             string part3 = "Your List is made up of: " + UnitCount + " units, for a total of: " + ptval + " points" ;
-            string part4 = dateOnly.ToString("d") + " ";
+            
 
-            string text = part1 + System.Environment.NewLine + part2 + part4 + part3 + System.Environment.NewLine + System.Environment.NewLine;
+            string text = part1 + System.Environment.NewLine + part3 + System.Environment.NewLine + System.Environment.NewLine;
                     
             
             System.IO.File.WriteAllText("Warhammer 40k Army List.txt", text);
@@ -366,9 +366,9 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text +"Index: " + unitIndex + " " + "Unit Name " + name + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + "\n" + "Stats: " + statline + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value " + pointvalue + "\n" + System.Environment.NewLine;
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text +"Index: " + unitIndex + "\n " + "Unit Name: " + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number: " + bookindex + "\n" + "Stats: " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value: " + pointvalue + "\n" + System.Environment.NewLine;
                 }
             }
 
@@ -416,9 +416,9 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Index: " + unitIndex + " " + "Unit Name " + name + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + "\n" + "Stats: " + statline + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value " + pointvalue + "\n" + System.Environment.NewLine;
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Index: " + unitIndex + "\n" + "Unit Name: " + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number: " + bookindex + "\n" + "Stats: " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value: " + pointvalue + "\n" + System.Environment.NewLine;
                 }
             }
         }
@@ -428,7 +428,7 @@ namespace _2018_Group_Project
             using (System.IO.StreamWriter file =
                new System.IO.StreamWriter("Warhammer 40k Army List.txt", true))
             {
-                file.WriteLine("Unit Name: " + name + System.Environment.NewLine + "Statline: " + statline + System.Environment.NewLine + "Page Number: " + unitIndex + System.Environment.NewLine + "Point Value: " + pointvalue + System.Environment.NewLine + System.Environment.NewLine);
+                file.WriteLine("Unit Name: " + name + System.Environment.NewLine + "Statline: " + statline + System.Environment.NewLine + "Page Number: " + bookindex + System.Environment.NewLine + "Point Value: " + pointvalue + System.Environment.NewLine + System.Environment.NewLine);
             }
         }
 
@@ -463,9 +463,9 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Index: " + unitIndex + " " + "Unit Name " + name + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + "\n" + "Stats: " + statline + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value " + pointvalue + "\n" + System.Environment.NewLine;
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Index: " + unitIndex + "\n" + "Unit Name: " + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number: " + bookindex + "\n" + "Stats: " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value: " + pointvalue + "\n" + System.Environment.NewLine;
                 }
             }
         }
@@ -475,7 +475,7 @@ namespace _2018_Group_Project
             using (System.IO.StreamWriter file =
                new System.IO.StreamWriter("Warhammer 40k Army List.txt", true))
             {
-                file.WriteLine("Unit Name: " + name + System.Environment.NewLine + "Statline: " + statline + System.Environment.NewLine + "Page Number: " + unitIndex + System.Environment.NewLine + "Point Value: " + pointvalue + System.Environment.NewLine + System.Environment.NewLine);
+                file.WriteLine("Unit Name: " + name + System.Environment.NewLine + "Statline: " + statline + System.Environment.NewLine + "Page Number: " + bookindex + System.Environment.NewLine + "Point Value: " + pointvalue + System.Environment.NewLine + System.Environment.NewLine);
             }
         }
 
@@ -522,9 +522,9 @@ namespace _2018_Group_Project
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Index: " + unitIndex + " " + "Unit Name " + name + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number " + bookindex + "\n" + "Stats: " + statline + "\n";
-                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value " + pointvalue + "\n" + System.Environment.NewLine;
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Index: " + unitIndex + "\n" + "Unit Name: " + name + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Page Number: " + bookindex + "\n" + "Stats: " + statline + "\n";
+                    (window as MainWindow).TextBox.Text = (window as MainWindow).TextBox.Text + "Point Value: " + pointvalue + "\n" + System.Environment.NewLine;
                 }
             }
         }
@@ -535,7 +535,7 @@ namespace _2018_Group_Project
             using (System.IO.StreamWriter file =
                new System.IO.StreamWriter("Warhammer 40k Army List.txt", true))
             {
-                file.WriteLine("Unit Name: " + name + System.Environment.NewLine + "Statline: " + statline + System.Environment.NewLine + "Page Number: " + unitIndex + System.Environment.NewLine + "Point Value: " + pointvalue + System.Environment.NewLine + System.Environment.NewLine);
+                file.WriteLine("Unit Name: " + name + System.Environment.NewLine + "Statline: " + statline + System.Environment.NewLine + "Page Number: " + bookindex + System.Environment.NewLine + "Point Value: " + pointvalue + System.Environment.NewLine + System.Environment.NewLine);
             }
         }
 
