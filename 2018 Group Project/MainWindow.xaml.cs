@@ -76,6 +76,7 @@ namespace _2018_Group_Project
          * to save on a lot of time typing and reading, all of the unit buttons have the same functionality.
          * On the single click, the newlist textbox displays the units information and on the double click
          * it adds the unit to the list and then prints the unit list on the textbox.
+         * the from line 81 through line 1166, is all of the unit buttons.
          */
         private void Button_Click(object sender, RoutedEventArgs e) {
 
@@ -1191,6 +1192,7 @@ namespace _2018_Group_Project
                 TextBox.Text = "";
 
                 TextBox.Text = "List already Created";
+                //displays if a list has been created before.
             }
         }
 
@@ -1209,6 +1211,7 @@ namespace _2018_Group_Project
                 TextBox.Text = "";
 
                 TextBox.Text = "List already Created";
+                //displayes if a list has been created before
             }
         }
 
@@ -1227,6 +1230,7 @@ namespace _2018_Group_Project
                 TextBox.Text = "";
 
                 TextBox.Text = "List already Created";
+                //displayes if a list has been created before
             }
             
         }

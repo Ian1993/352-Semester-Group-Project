@@ -26,13 +26,21 @@ namespace _2018_Group_Project
 
 
         private int UnitCount;
+        //holds the number of units in your army
         private int ptval;
+        //stores the amount of points that the user has used
         private int ptkeeper;
+        //holds the point value that you chose to abide by
         private FileManager dataman;
+        // the instance of our FileManager to access the database
         static private int size = 8;
+        // the size of our arrays
         public string[] arr = new string[size];
+        // stores the information for all of the regular stats
         public string[] arr1 = new string[size];
+        //stores the information for all of the dualLine units.
         string query;
+        //our query string
 
         public unitManager(int pts)
         {
